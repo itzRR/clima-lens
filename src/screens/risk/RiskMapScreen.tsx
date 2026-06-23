@@ -3,7 +3,7 @@ import {
   View, Text, ScrollView, StyleSheet, TouchableOpacity, Dimensions, Modal, ActivityIndicator, TextInput, FlatList
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import Animated, { FadeIn, FadeInDown, SlideInUp } from 'react-native-reanimated';
+import Animated, { FadeIn, FadeInDown, SlideInUp, useAnimatedStyle, useSharedValue, withRepeat, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
@@ -63,12 +63,32 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
     ? distDestinations.reduce((sum, d) => sum + (d.suitability_score || 0), 0) / distDestinations.length 
     : 95;
 
+  const [showScrollHint, setShowScrollHint] = useState(true);
+  const bounceY = useSharedValue(0);
+
+  React.useEffect(() => {
+    bounceY.value = withRepeat(withTiming(8, { duration: 600 }), -1, true);
+  }, []);
+
+  const bounceStyle = useAnimatedStyle(() => ({
+    transform: [{ translateY: bounceY.value }],
+  }));
+
   return (
     <Modal visible transparent animationType="slide" onRequestClose={onClose}>
       <TouchableOpacity style={styles.modalOverlay} activeOpacity={1} onPress={onClose}>
         <Animated.View style={[styles.bottomSheet, { paddingBottom: Math.max(insets.bottom + 60, 80) }]}>
           <View style={styles.sheetHandle} />
-          <ScrollView showsVerticalScrollIndicator={false} bounces={false}>
+          <ScrollView
+            showsVerticalScrollIndicator={false}
+            bounces={false}
+            onScroll={(e) => {
+              if (e.nativeEvent.contentOffset.y > 20 && showScrollHint) {
+                setShowScrollHint(false);
+              }
+            }}
+            scrollEventThrottle={16}
+          >
             <TouchableOpacity activeOpacity={1} style={{ flexShrink: 1 }}>
               <View style={styles.sheetHeader}>
               <View>
@@ -139,6 +159,15 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
             </TouchableOpacity>
             </TouchableOpacity>
           </ScrollView>
+          {showScrollHint && (
+            <Animated.View style={[{
+              position: 'absolute', bottom: 12, alignSelf: 'center',
+              alignItems: 'center', opacity: 0.7,
+            }, bounceStyle]}>
+              <Ionicons name="chevron-down" size={20} color={colors.textSecondary} />
+              <Text style={{ ...Typography.caption, color: colors.textSecondary, fontSize: 10 }}>Scroll for more</Text>
+            </Animated.View>
+          )}
         </Animated.View>
       </TouchableOpacity>
     </Modal>
