@@ -141,9 +141,9 @@ def sync_live_data():
             }).eq('id', dest['id']).execute()
             
             updated_count[0] += 1
-            print(f"[{updated_count[0]}] Updated {dest['name']} | {risk_tier} | Temp: {weather['temp']}C | AI Suitability: {suitability}/100")
+            print(f"[{updated_count[0]}] Updated {dest.get('name')} | risk.{risk_tier} | Temp: {weather['temp']}C | AI Suitability: {int(suitability)}/100", flush=True)
         except Exception as e:
-            print(f"ERROR processing {dest.get('name')}: {e}")
+            print(f"ERROR processing {dest.get('name')}: {e}", flush=True)
 
     for dest in destinations:
         process_dest(dest)
