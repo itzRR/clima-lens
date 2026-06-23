@@ -64,84 +64,85 @@ def sync_live_data():
     skipped_names = []
     
     def process_dest(dest):
-        lat, lon = dest.get('latitude'), dest.get('longitude')
-        if not lat or not lon:
-            skipped_count[0] += 1
-            skipped_names.append(dest.get('name', 'Unknown'))
-            print(f"⏭️ SKIPPED (no coordinates): {dest.get('name', 'Unknown')}")
-            return
-            
-        # 1. Fetch Real Weather
-        weather = fetch_live_weather(lat, lon)
-        
-        # Calculate Anomaly using baselines
-        import json
-        from datetime import datetime
         try:
-            with open(os.path.join(base_dir, '../src/utils/historical_baselines.json'), 'r') as f:
-                baselines = json.load(f)
-            month = str(datetime.now().month)
-            avg_precip = baselines.get('_FALLBACK_', {}).get(month, {}).get('avg_precip', 0)
-            precip_anomaly = weather['precipitation'] - (avg_precip / 30)
-        except Exception as e:
-            print("Could not load baselines:", e)
-            precip_anomaly = 0
+            lat, lon = dest.get('latitude'), dest.get('longitude')
+            if not lat or not lon:
+                skipped_count[0] += 1
+                skipped_names.append(dest.get('name', 'Unknown'))
+                print(f"SKIPPED (no coordinates): {dest.get('name', 'Unknown')}")
+                return
+                
+            # 1. Fetch Real Weather
+            weather = fetch_live_weather(lat, lon)
             
-        # 2. Run XGBoost Inference (8-Hour Model)
-        features = np.array([[weather['temp'], weather['precipitation'], weather['wind_speed'], weather['elevation']]])
-        
-        risk_class = int(clf.predict(features)[0]) # 0=High, 1=Low, 2=Moderate
-        suitability = int(reg.predict(features)[0])
-        
-        # 3. Map predictions to UI metrics
-        risk_map = {0: 'risk.high', 1: 'risk.low', 2: 'risk.moderate'}
-        color_map = {0: '#EF4444', 1: '#22C55E', 2: '#EAB308'}
-        
-        risk_tier = risk_map.get(risk_class, 'risk.low')
-        risk_color = color_map.get(risk_class, '#22C55E')
-        
-        # SAFETY OVERRIDE: Same logic as frontend
-        if precip_anomaly > 40.0:
-            risk_tier = 'risk.high'
-            risk_color = '#EF4444'
-            print(f"⚠️ ANOMALY OVERRIDE in sync script! Precip +{precip_anomaly:.1f}mm")
-        elif precip_anomaly > 20.0 and risk_tier == 'risk.low':
-            risk_tier = 'risk.moderate'
-            risk_color = '#EAB308'
-        
-        safety_score = max(0, 100 - (weather['precipitation'] * 2) - (weather['wind_speed']))
-        comfort_score = max(0, 100 - abs(weather['temp'] - 26) * 3)
-        risk_score = 100 - safety_score
-        forecast_confidence = np.random.randint(80, 95)
-        community_activity = np.random.randint(5, 50)
-        
-        weather_text = "Heavy Rain" if weather['precipitation'] > 5 else "Rainy" if weather['precipitation'] > 0.1 else "Cloudy" if weather['precipitation'] > 0 else "Clear"
-        
-        # 4. Update Database
-        supabase.table('destinations').update({
-            "risk_tier": risk_tier,
-            "risk_color": risk_color,
-            "suitability_score": suitability,
-            "safety_score": int(safety_score),
-            "comfort_score": int(comfort_score),
-            "risk_score": int(risk_score),
-            "forecast_confidence": int(forecast_confidence),
-            "community_activity": int(community_activity),
-            "temp": f"{weather['temp']}°C",
-            "weather": weather_text
-        }).eq('id', dest['id']).execute()
-        
-        updated_count[0] += 1
-        print(f"✅ [{updated_count[0]}] Updated {dest['name']} | {risk_tier} | Temp: {weather['temp']}°C | AI Suitability: {suitability}/100")
+            # Calculate Anomaly using baselines
+            import json
+            from datetime import datetime
+            try:
+                with open(os.path.join(base_dir, '../src/utils/historical_baselines.json'), 'r') as f:
+                    baselines = json.load(f)
+                month = str(datetime.now().month)
+                avg_precip = baselines.get('_FALLBACK_', {}).get(month, {}).get('avg_precip', 0)
+                precip_anomaly = weather['precipitation'] - (avg_precip / 30)
+            except Exception as e:
+                precip_anomaly = 0
+                
+            # 2. Run XGBoost Inference (8-Hour Model)
+            features = np.array([[weather['temp'], weather['precipitation'], weather['wind_speed'], weather['elevation']]])
+            
+            risk_class = int(clf.predict(features)[0]) # 0=High, 1=Low, 2=Moderate
+            suitability = int(reg.predict(features)[0])
+            
+            # 3. Map predictions to UI metrics
+            risk_map = {0: 'risk.high', 1: 'risk.low', 2: 'risk.moderate'}
+            color_map = {0: '#EF4444', 1: '#22C55E', 2: '#EAB308'}
+            
+            risk_tier = risk_map.get(risk_class, 'risk.low')
+            risk_color = color_map.get(risk_class, '#22C55E')
+            
+            # SAFETY OVERRIDE: Same logic as frontend
+            if precip_anomaly > 40.0:
+                risk_tier = 'risk.high'
+                risk_color = '#EF4444'
+            elif precip_anomaly > 20.0 and risk_tier == 'risk.low':
+                risk_tier = 'risk.moderate'
+                risk_color = '#EAB308'
+            
+            safety_score = max(0, 100 - (weather['precipitation'] * 2) - (weather['wind_speed']))
+            comfort_score = max(0, 100 - abs(weather['temp'] - 26) * 3)
+            risk_score = 100 - safety_score
+            forecast_confidence = np.random.randint(80, 95)
+            community_activity = np.random.randint(5, 50)
+            
+            weather_text = "Heavy Rain" if weather['precipitation'] > 5 else "Rainy" if weather['precipitation'] > 0.1 else "Cloudy" if weather['precipitation'] > 0 else "Clear"
+            
+            # 4. Update Database
+            supabase.table('destinations').update({
+                "risk_tier": risk_tier,
+                "risk_color": risk_color,
+                "suitability_score": suitability,
+                "safety_score": int(safety_score),
+                "comfort_score": int(comfort_score),
+                "risk_score": int(risk_score),
+                "forecast_confidence": int(forecast_confidence),
+                "community_activity": int(community_activity),
+                "temp": f"{weather['temp']}°C",
+                "weather": weather_text
+            }).eq('id', dest['id']).execute()
+            
+            updated_count[0] += 1
+            print(f"[{updated_count[0]}] Updated {dest['name']} | {risk_tier} | Temp: {weather['temp']}C | AI Suitability: {suitability}/100")
+        except Exception as e:
+            print(f"ERROR processing {dest.get('name')}: {e}")
 
     with ThreadPoolExecutor(max_workers=20) as executor:
-        executor.map(process_dest, destinations)
+        list(executor.map(process_dest, destinations))
 
     print("\n" + "="*60)
-    print(f"🏁 SYNC COMPLETE!")
+    print(f"SYNC COMPLETE!")
     print(f"   Total in DB: {len(destinations)}")
-    print(f"   ✅ Updated:  {updated_count[0]}")
-    print(f"   ⏭️ Skipped:  {skipped_count[0]}")
+    print(f"   Updated:  {updated_count[0]}")
+    print(f"   Skipped:  {skipped_count[0]}")
     if skipped_names:
         print(f"   Skipped locations: {', '.join(skipped_names)}")
     print("="*60)
