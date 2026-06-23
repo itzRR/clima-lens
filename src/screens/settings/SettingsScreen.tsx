@@ -335,7 +335,7 @@ export default function SettingsScreen() {
                 <Text style={[styles.appTagline, { color: colors.textSecondary }]}>Climate Risk & Travel Intelligence</Text>
               </View>
               <View style={[styles.versionBadge, { borderColor: colors.accent + '30', backgroundColor: colors.accent + '12' }]}>
-                <Text style={[styles.versionText, { color: colors.accent }]}>v1.3</Text>
+                <Text style={[styles.versionText, { color: colors.accent }]}>v1.4</Text>
               </View>
             </View>
             
