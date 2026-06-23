@@ -170,7 +170,7 @@ export function ProfileScreen() {
             </SettingRow>
             <View style={styles.settingDivider} />
             <SettingRow icon="information-circle-outline" label={t('profile.about')} iconColor="#3B82F6">
-              <Text style={styles.versionText}>v1.4.0</Text>
+              <Text style={styles.versionText}>v1.5.0</Text>
             </SettingRow>
           </GlassCard>
         </Animated.View>
