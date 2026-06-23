@@ -10,6 +10,8 @@ interface AuthState {
   updateProfile: (displayName: string, avatarGradient: number, avatarSeed?: string) => Promise<void>;
 }
 
+import { useItineraryStore } from './useItineraryStore';
+
 export const useAuthStore = create<AuthState>((set, get) => ({
   session: null,
   loading: true,
@@ -21,6 +23,11 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     // Listen for changes
     supabase.auth.onAuthStateChange((_event, newSession) => {
       set({ session: newSession });
+      // When user logs in/out, reload their trips from Supabase
+      if (newSession) {
+        useItineraryStore.getState().loadAllItineraries();
+        useItineraryStore.getState().loadOrCreateItinerary();
+      }
     });
   },
   signOut: async () => {

@@ -31,11 +31,11 @@ const { width } = Dimensions.get('window');
 // Risk color helper
 function riskColor(risk: string): string {
   switch (risk) {
-    case 'Critical': return colors.riskCritical;
-    case 'High': return colors.riskHigh;
-    case 'Moderate': return colors.riskModerate;
-    case 'Low': return colors.riskLow;
-    default: return colors.riskSafe;
+    case 'Critical': return Colors.riskCritical;
+    case 'High': return Colors.riskHigh;
+    case 'Moderate': return Colors.riskModerate;
+    case 'Low': return Colors.riskLow;
+    default: return Colors.riskSafe;
   }
 }
 
