@@ -11,13 +11,14 @@ from datetime import datetime
 load_dotenv()
 
 # Initialize Supabase
-url: str = os.environ.get("SUPABASE_URL")
-key: str = os.environ.get("SUPABASE_KEY")
+sb_url: str = os.environ.get("SUPABASE_URL")
+sb_key: str = os.environ.get("SUPABASE_KEY")
 
-if not url or not key:
+if not sb_url or not sb_key:
     raise RuntimeError("SUPABASE_URL and SUPABASE_KEY must be set in .env")
 
-supabase: Client = create_client(url, os.environ.get('SUPABASE_SERVICE_KEY', key))
+sb_service_key = os.environ.get('SUPABASE_SERVICE_KEY', sb_key)
+supabase: Client = create_client(sb_url, sb_service_key)
 
 # Load XGBoost Models
 clf = xgb.XGBClassifier()
@@ -44,7 +45,7 @@ except Exception:
 
 
 def fetch_batch_weather(destinations_batch):
-    """Fetch weather for up to 50 locations in ONE API call using Open-Meteo batch coordinates."""
+    """Fetch weather for up to 50 locations in ONE API call."""
     lats = []
     lons = []
     valid_indices = []
@@ -64,16 +65,14 @@ def fetch_batch_weather(destinations_batch):
     api_url = f"https://api.open-meteo.com/v1/forecast?latitude={lat_str}&longitude={lon_str}&current=temperature_2m,precipitation,wind_speed_10m,cloud_cover"
 
     try:
-        res = requests.get(api_url, timeout=(10, 30)).json()
+        res = requests.get(api_url, timeout=(10, 60)).json()
     except Exception as e:
         print(f"  BATCH API ERROR: {e}", flush=True)
         return {}
 
-    # Parse response - single location returns dict, multiple returns list
     weather_map = {}
 
     if isinstance(res, list):
-        # Multiple locations returned as array
         for idx, loc_data in enumerate(res):
             if idx < len(valid_indices):
                 orig_idx = valid_indices[idx]
@@ -86,7 +85,6 @@ def fetch_batch_weather(destinations_batch):
                     "elevation": loc_data.get('elevation', 50)
                 }
     elif isinstance(res, dict) and 'current' in res:
-        # Single location
         current = res.get('current', {})
         if valid_indices:
             weather_map[valid_indices[0]] = {
@@ -114,6 +112,36 @@ def get_weather_text(weather):
         return "Clear"
 
 
+def batch_update_supabase(updates):
+    """Update multiple rows in Supabase using individual REST API calls with requests + timeout."""
+    success = 0
+    for row in updates:
+        row_id = row.pop('id')
+        try:
+            # Use raw REST API with requests (has proper timeout) instead of supabase-py client
+            headers = {
+                "apikey": sb_service_key,
+                "Authorization": f"Bearer {sb_service_key}",
+                "Content-Type": "application/json",
+                "Prefer": "return=minimal"
+            }
+            resp = requests.patch(
+                f"{sb_url}/rest/v1/destinations?id=eq.{row_id}",
+                json=row,
+                headers=headers,
+                timeout=(10, 30)
+            )
+            if resp.status_code < 300:
+                success += 1
+            else:
+                print(f"    DB error for id={row_id}: {resp.status_code} {resp.text}", flush=True)
+        except requests.exceptions.Timeout:
+            print(f"    DB TIMEOUT for id={row_id} - skipping", flush=True)
+        except Exception as e:
+            print(f"    DB ERROR for id={row_id}: {e}", flush=True)
+    return success
+
+
 def sync_live_data():
     if not models_loaded:
         print("Cannot update Supabase: Models not loaded.", flush=True)
@@ -124,7 +152,7 @@ def sync_live_data():
     destinations = response.data
 
     total = len(destinations)
-    print(f"Found {total} destinations. Using BATCH weather API (5 calls instead of {total})...", flush=True)
+    print(f"Found {total} destinations. Using BATCH weather + REST API updates...", flush=True)
 
     updated_count = 0
     skipped_count = 0
@@ -147,16 +175,17 @@ def sync_live_data():
         weather_map = fetch_batch_weather(batch)
         print(f"  Got weather for {len(weather_map)} locations in 1 API call", flush=True)
 
-        # 2. Process each destination in the batch
+        # 2. Build all updates for this batch (no DB calls yet)
+        batch_updates = []
+        batch_logs = []
+
         for i, dest in enumerate(batch):
             try:
                 lat, lon = dest.get('latitude'), dest.get('longitude')
                 if not lat or not lon:
                     skipped_count += 1
-                    print(f"  SKIPPED (no coords): {dest.get('name', 'Unknown')}", flush=True)
                     continue
 
-                # Get weather from batch result, or use defaults
                 weather = weather_map.get(i, {
                     "temp": 28.0, "precipitation": 0.0, "wind_speed": 10.0,
                     "cloud_cover": 0, "elevation": 50
@@ -164,18 +193,16 @@ def sync_live_data():
 
                 precip_anomaly = weather['precipitation'] - (avg_precip / 30)
 
-                # Run XGBoost
                 features = np.array([[weather['temp'], weather['precipitation'],
                                       weather['wind_speed'], weather['elevation']]])
                 risk_class = int(clf.predict(features)[0])
                 suitability = int(reg.predict(features)[0])
 
-                risk_map = {0: 'risk.high', 1: 'risk.low', 2: 'risk.moderate'}
+                risk_map_dict = {0: 'risk.high', 1: 'risk.low', 2: 'risk.moderate'}
                 color_map = {0: '#EF4444', 1: '#22C55E', 2: '#EAB308'}
-                risk_tier = risk_map.get(risk_class, 'risk.low')
+                risk_tier = risk_map_dict.get(risk_class, 'risk.low')
                 risk_color = color_map.get(risk_class, '#22C55E')
 
-                # Safety override
                 if precip_anomaly > 40.0:
                     risk_tier = 'risk.high'
                     risk_color = '#EF4444'
@@ -188,11 +215,10 @@ def sync_live_data():
                 risk_score = 100 - safety_score
                 forecast_confidence = np.random.randint(80, 95)
                 community_activity = np.random.randint(5, 50)
-
                 weather_text = get_weather_text(weather)
 
-                # Update Supabase
-                supabase.table('destinations').update({
+                batch_updates.append({
+                    "id": dest['id'],
                     "risk_tier": risk_tier,
                     "risk_color": risk_color,
                     "suitability_score": suitability,
@@ -203,19 +229,28 @@ def sync_live_data():
                     "community_activity": int(community_activity),
                     "temp": f"{weather['temp']}\u00b0C",
                     "weather": weather_text
-                }).eq('id', dest['id']).execute()
+                })
 
-                updated_count += 1
                 global_num = batch_start + i + 1
-                print(f"  [{global_num}] {dest.get('name')} | {risk_tier} | {weather['temp']}C | {weather_text} | AI: {suitability}/100", flush=True)
+                batch_logs.append(f"  [{global_num}] {dest.get('name')} | {risk_tier} | {weather['temp']}C | {weather_text} | AI: {suitability}/100")
 
             except Exception as e:
                 error_count += 1
                 print(f"  [ERROR] {dest.get('name')}: {e}", flush=True)
 
-        # Small pause between batches
+        # 3. Send all DB updates for this batch (with timeouts on each)
+        print(f"  Updating {len(batch_updates)} rows in Supabase...", flush=True)
+        success = batch_update_supabase(batch_updates)
+        updated_count += success
+
+        # 4. Print logs
+        for log in batch_logs:
+            print(log, flush=True)
+
+        print(f"  Batch {batch_num} complete: {success}/{len(batch_updates)} updated", flush=True)
+
+        # Pause between batches
         if batch_end < total:
-            print(f"  Batch {batch_num} done. Pausing 2s before next batch...", flush=True)
             time.sleep(2)
 
     print("\n" + "="*60, flush=True)
