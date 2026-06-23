@@ -1,0 +1,37 @@
+name: 🌍 ClimaLens Risk Data Sync
+
+on:
+  # Auto-run every 1 hour
+  schedule:
+    - cron: '0 * * * *'  # Every hour at minute 0
+  
+  # Manual trigger button in GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  sync-risk-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: ai_backend/requirements.txt
+
+      - name: 📦 Install dependencies
+        run: pip install -r ai_backend/requirements.txt
+
+      - name: 🌦️ Run Live Data Sync (Weather + AI Risk)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          cd ai_backend
+          python run_real_data_sync.py
