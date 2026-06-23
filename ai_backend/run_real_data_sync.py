@@ -34,7 +34,7 @@ except Exception as e:
 
 def fetch_live_weather(lat, lon):
     """Fetch live weather from Open-Meteo free API."""
-    url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,precipitation,wind_speed_10m&elevation=nan"
+    url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,precipitation,wind_speed_10m,cloud_cover&elevation=nan"
     try:
         res = requests.get(url, timeout=10).json()
         current = res.get('current', {})
@@ -42,6 +42,7 @@ def fetch_live_weather(lat, lon):
             "temp": current.get('temperature_2m', 25.0),
             "precipitation": current.get('precipitation', 0.0),
             "wind_speed": current.get('wind_speed_10m', 10.0),
+            "cloud_cover": current.get('cloud_cover', 0),
             "elevation": res.get('elevation', 50)
         }
     except Exception as e:
@@ -114,7 +115,16 @@ def sync_live_data():
             forecast_confidence = np.random.randint(80, 95)
             community_activity = np.random.randint(5, 50)
             
-            weather_text = "Heavy Rain" if weather['precipitation'] > 5 else "Rainy" if weather['precipitation'] > 0.1 else "Cloudy" if weather['precipitation'] > 0 else "Clear"
+            if weather['precipitation'] > 5:
+                weather_text = "Heavy Rain"
+            elif weather['precipitation'] > 0.1:
+                weather_text = "Rainy"
+            elif weather.get('cloud_cover', 0) > 60:
+                weather_text = "Mostly Cloudy"
+            elif weather.get('cloud_cover', 0) > 20:
+                weather_text = "Partly Cloudy"
+            else:
+                weather_text = "Clear"
             
             # 4. Update Database
             supabase.table('destinations').update({
