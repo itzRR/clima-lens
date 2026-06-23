@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import {
-  View, Text, ScrollView, StyleSheet, TouchableOpacity, Dimensions, Modal, ActivityIndicator, TextInput, FlatList
+  View, Text, ScrollView, StyleSheet, TouchableOpacity, Dimensions, Modal, ActivityIndicator, TextInput, FlatList, Pressable
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Animated, { FadeIn, FadeInDown, SlideInUp, useAnimatedStyle, useSharedValue, withRepeat, withTiming } from 'react-native-reanimated';
@@ -76,12 +76,13 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
 
   return (
     <Modal visible transparent animationType="slide" onRequestClose={onClose}>
-      <TouchableOpacity style={styles.modalOverlay} activeOpacity={1} onPress={onClose}>
-        <Animated.View style={[styles.bottomSheet, { paddingBottom: Math.max(insets.bottom + 60, 80) }]}>
+      <Pressable style={styles.modalOverlay} onPress={onClose}>
+        <Pressable style={[styles.bottomSheet, { paddingBottom: Math.max(insets.bottom + 60, 80) }]} onPress={(e) => e.stopPropagation()}>
           <View style={styles.sheetHandle} />
           <ScrollView
             showsVerticalScrollIndicator={false}
             bounces={false}
+            nestedScrollEnabled={true}
             onScroll={(e) => {
               if (e.nativeEvent.contentOffset.y > 20 && showScrollHint) {
                 setShowScrollHint(false);
@@ -89,7 +90,7 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
             }}
             scrollEventThrottle={16}
           >
-            <TouchableOpacity activeOpacity={1} style={{ flexShrink: 1 }}>
+            <View>
               <View style={styles.sheetHeader}>
               <View>
                 <Text style={styles.sheetName}>{district.name}</Text>
@@ -157,7 +158,7 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
             <TouchableOpacity style={[styles.closeBtn, {backgroundColor: 'transparent', marginTop: Spacing.sm}]} onPress={onClose}>
               <Text style={[styles.closeBtnText, {color: colors.textSecondary}]}>Close</Text>
             </TouchableOpacity>
-            </TouchableOpacity>
+            </View>
           </ScrollView>
           {showScrollHint && (
             <Animated.View style={[{
@@ -168,8 +169,8 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
               <Text style={{ ...Typography.caption, color: colors.textSecondary, fontSize: 10 }}>Scroll for more</Text>
             </Animated.View>
           )}
-        </Animated.View>
-      </TouchableOpacity>
+        </Pressable>
+      </Pressable>
     </Modal>
   );
 }
