@@ -21,8 +21,11 @@ jobs:
 
       - name: 📦 Install dependencies
         run: |
-          pip install --upgrade pip
-          pip install scikit-learn xgboost numpy pandas requests supabase python-dotenv
+          python -m pip install --upgrade pip
+          python -m pip install scikit-learn
+          python -m pip install xgboost numpy pandas requests supabase python-dotenv
+          python -c "import sklearn; print('sklearn OK:', sklearn.__version__)"
+          python -c "import xgboost; print('xgboost OK:', xgboost.__version__)"
 
       - name: 🌦️ Run Live Data Sync (Weather + AI Risk)
         env:
