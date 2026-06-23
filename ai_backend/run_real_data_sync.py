@@ -36,7 +36,7 @@ def fetch_live_weather(lat, lon):
     """Fetch live weather from Open-Meteo free API."""
     url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,precipitation,wind_speed_10m&elevation=nan"
     try:
-        res = requests.get(url).json()
+        res = requests.get(url, timeout=10).json()
         current = res.get('current', {})
         return {
             "temp": current.get('temperature_2m', 25.0),
