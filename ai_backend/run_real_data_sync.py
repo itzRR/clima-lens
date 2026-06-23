@@ -59,9 +59,16 @@ def sync_live_data():
     
     print(f"Found {len(destinations)} destinations. Syncing Live Open-Meteo Data & Running AI...")
     
+    updated_count = [0]
+    skipped_count = [0]
+    skipped_names = []
+    
     def process_dest(dest):
         lat, lon = dest.get('latitude'), dest.get('longitude')
         if not lat or not lon:
+            skipped_count[0] += 1
+            skipped_names.append(dest.get('name', 'Unknown'))
+            print(f"⏭️ SKIPPED (no coordinates): {dest.get('name', 'Unknown')}")
             return
             
         # 1. Fetch Real Weather
@@ -124,12 +131,21 @@ def sync_live_data():
             "weather": weather_text
         }).eq('id', dest['id']).execute()
         
-        print(f"Updated {dest['name']} | Temp: {weather['temp']}°C | AI Suitability: {suitability}/100")
+        updated_count[0] += 1
+        print(f"✅ [{updated_count[0]}] Updated {dest['name']} | {risk_tier} | Temp: {weather['temp']}°C | AI Suitability: {suitability}/100")
 
     with ThreadPoolExecutor(max_workers=20) as executor:
         executor.map(process_dest, destinations)
 
-    print("Live Data Sync Complete!")
+    print("\n" + "="*60)
+    print(f"🏁 SYNC COMPLETE!")
+    print(f"   Total in DB: {len(destinations)}")
+    print(f"   ✅ Updated:  {updated_count[0]}")
+    print(f"   ⏭️ Skipped:  {skipped_count[0]}")
+    if skipped_names:
+        print(f"   Skipped locations: {', '.join(skipped_names)}")
+    print("="*60)
 
 if __name__ == "__main__":
     sync_live_data()
+
