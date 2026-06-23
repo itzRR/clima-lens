@@ -193,6 +193,16 @@
     "overallRisk": "සමස්ත අවදානම",
     "totalDrive": "මුළු ගමන",
     "stops": "නැවතුම්",
-    "perStopBreakdown": "නැවතුම් අනුව විස්තරය"
+    "perStopBreakdown": "නැවතුම් අනුව විස්තරය",
+    "noDestinations": "තවම ගමනාන්ත නොමැත",
+    "noDestinationsDesc": "\"ගවේෂණය\" වෙත ගොස් ඔබ කැමති ගමනාන්ත සොයාගෙන ඒවා මෙහි එක් කිරීමට තට්ටු කරන්න",
+    "startAdventure": "ඔබගේ ශ්‍රී ලංකා සංචාරය සැලසුම් කිරීම අරඹන්න",
+    "destinationsCount": "ගමනාන්ත",
+    "totalTravel": "මුළු ගමන් කාලය",
+    "yourRoute": "ඔබේ මාර්ගය",
+    "clearRouteTitle": "මාර්ගය මකන්න",
+    "clearRouteMsg": "මෙම සංචාරයෙන් සියලුම ස්ථාන ඉවත් කරන්නද? මෙය නැවත වෙනස් කළ නොහැක.",
+    "clearAll": "සියල්ල මකන්න",
+    "clearAllStops": "සියලුම ස්ථාන මකන්න"
   }
 }

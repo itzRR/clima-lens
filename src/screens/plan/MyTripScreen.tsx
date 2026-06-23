@@ -293,8 +293,8 @@ export default function MyTripScreen() {
               
               <Text style={styles.headerSubtitle}>
                 {enrichedStops.length === 0
-                  ? 'Start building your Sri Lanka adventure'
-                  : `${enrichedStops.length} destination${enrichedStops.length > 1 ? 's' : ''} · ${formatMinutes(totalTravelMinutes)} total travel`}
+                  ? t('myTrip.startAdventure', 'Start building your Sri Lanka adventure')
+                  : `${enrichedStops.length} ${t('myTrip.destinationsCount', 'destination')}${enrichedStops.length > 1 ? 's' : ''} · ${formatMinutes(totalTravelMinutes)} ${t('myTrip.totalTravel', 'total travel')}`}
               </Text>
             </View>
           </LinearGradient>
@@ -326,14 +326,14 @@ export default function MyTripScreen() {
         {enrichedStops.length > 0 && (
           <View style={styles.timelineSection}>
             <View style={styles.sectionHeader}>
-              <Text style={styles.sectionTitle}>Your Route</Text>
+              <Text style={styles.sectionTitle}>{t('myTrip.yourRoute', 'Your Route')}</Text>
               <TouchableOpacity onPress={() => {
                 showConfirm({
-                  title: 'Clear Route',
-                  message: 'Remove all stops from this trip? This cannot be undone.',
+                  title: t('myTrip.clearRouteTitle', 'Clear Route'),
+                  message: t('myTrip.clearRouteMsg', 'Remove all stops from this trip? This cannot be undone.'),
                   icon: 'trash-outline',
                   iconColor: colors.danger,
-                  confirmText: 'Clear All',
+                  confirmText: t('myTrip.clearAll', 'Clear All'),
                   onConfirm: async () => {
                     for (const stop of enrichedStops) {
                       await removeStop(stop.id);
@@ -341,7 +341,7 @@ export default function MyTripScreen() {
                   },
                 });
               }}>
-                <Text style={styles.clearButton}>Clear All Stops</Text>
+                <Text style={styles.clearButton}>{t('myTrip.clearAllStops', 'Clear All Stops')}</Text>
               </TouchableOpacity>
             </View>
 

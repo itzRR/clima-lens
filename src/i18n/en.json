@@ -193,6 +193,16 @@
     "overallRisk": "Overall Risk",
     "totalDrive": "Total Drive",
     "stops": "Stops",
-    "perStopBreakdown": "Per-Stop Breakdown"
+    "perStopBreakdown": "Per-Stop Breakdown",
+    "noDestinations": "No Destinations Yet",
+    "noDestinationsDesc": "Go to \"Plan a Trip\", find destinations you love, and tap the",
+    "startAdventure": "Start building your Sri Lanka adventure",
+    "destinationsCount": "destination",
+    "totalTravel": "total travel",
+    "yourRoute": "Your Route",
+    "clearRouteTitle": "Clear Route",
+    "clearRouteMsg": "Remove all stops from this trip? This cannot be undone.",
+    "clearAll": "Clear All",
+    "clearAllStops": "Clear All Stops"
   }
 }
