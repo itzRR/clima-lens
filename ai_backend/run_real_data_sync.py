@@ -145,7 +145,7 @@ def sync_live_data():
         except Exception as e:
             print(f"ERROR processing {dest.get('name')}: {e}")
 
-    with ThreadPoolExecutor(max_workers=20) as executor:
+    with ThreadPoolExecutor(max_workers=3) as executor:
         list(executor.map(process_dest, destinations))
 
     print("\n" + "="*60)
