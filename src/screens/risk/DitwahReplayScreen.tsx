@@ -190,6 +190,7 @@ const createStyles = (colors: any) => StyleSheet.create({
   },
   content: {
     padding: Spacing.lg,
+    paddingBottom: Spacing.xl * 4,
   },
   contextBanner: {
     backgroundColor: '#0F3D2E', // Dark teal as specified
