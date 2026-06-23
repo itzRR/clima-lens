@@ -13,6 +13,7 @@ import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
 
 import { Colors, Typography, Spacing, BorderRadius } from '../theme';
+import { useTheme } from '../theme/ThemeContext';
 
 // Import all screens for the new architecture
 import TripPlannerScreen from '../screens/plan/TripPlannerScreen';
@@ -103,6 +104,7 @@ function TabBarIcon({ name, focused, color }: { name: string; focused: boolean; 
 
 function CustomTabBar({ state, descriptors, navigation }: any) {
   const insets = useSafeAreaInsets();
+  const { isDark, colors } = useTheme();
 
   const tabLabels: Record<string, string> = {
     Plan: 'Plan a Trip',
@@ -113,7 +115,7 @@ function CustomTabBar({ state, descriptors, navigation }: any) {
 
   return (
     <View style={[styles.tabBarContainer, { paddingBottom: Math.max(insets.bottom, 12) }]}>
-      <BlurView intensity={70} tint="dark" style={styles.tabBar}>
+      <BlurView intensity={70} tint={isDark ? "dark" : "light"} style={[styles.tabBar, { backgroundColor: isDark ? 'rgba(12, 14, 13, 0.85)' : 'rgba(255, 255, 255, 0.85)', borderColor: isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.08)' }]}>
         {state.routes.map((route: any, index: number) => {
           const { options } = descriptors[route.key];
           const isFocused = state.index === index;
@@ -192,10 +194,8 @@ const styles = StyleSheet.create({
   },
   tabBar: {
     flexDirection: 'row',
-    backgroundColor: 'rgba(12, 14, 13, 0.95)',
     borderRadius: BorderRadius['3xl'],
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.08)',
     paddingVertical: Spacing.sm,
     paddingHorizontal: Spacing.sm,
     ...Platform.select({
