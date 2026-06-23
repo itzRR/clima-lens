@@ -253,10 +253,13 @@ export function ClimaMap({ destinations = [], onDistrictSelect, onDestinationSel
   }
 
   const html = generateLeafletHTML(destinations);
+  // Create a unique key so WebView re-renders when data changes
+  const mapKey = destinations.map(d => `${d.id}-${d.risk_color}`).join(',');
 
   return (
     <View style={styles.container}>
       <WebView
+        key={mapKey}
         source={{ html }}
         style={{ flex: 1, backgroundColor: Colors.background }}
         originWhitelist={['*']}
