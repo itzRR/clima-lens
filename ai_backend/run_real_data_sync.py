@@ -1,10 +1,10 @@
 import os
+import time
 import requests
 from supabase import create_client, Client
 import xgboost as xgb
 import numpy as np
 from dotenv import load_dotenv
-from concurrent.futures import ThreadPoolExecutor
 
 load_dotenv()
 
@@ -36,7 +36,7 @@ def fetch_live_weather(lat, lon):
     """Fetch live weather from Open-Meteo free API."""
     url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,precipitation,wind_speed_10m,cloud_cover&elevation=nan"
     try:
-        res = requests.get(url, timeout=10).json()
+        res = requests.get(url, timeout=(5, 10)).json()
         current = res.get('current', {})
         return {
             "temp": current.get('temperature_2m', 25.0),
@@ -45,8 +45,11 @@ def fetch_live_weather(lat, lon):
             "cloud_cover": current.get('cloud_cover', 0),
             "elevation": res.get('elevation', 50)
         }
+    except requests.exceptions.Timeout:
+        print(f"TIMEOUT fetching weather for lat={lat} lon={lon} - using defaults", flush=True)
+        return {"temp": 28.0, "precipitation": 0.0, "wind_speed": 10.0, "cloud_cover": 0, "elevation": 50}
     except Exception as e:
-        print(f"Error fetching weather: {e}")
+        print(f"Error fetching weather: {e}", flush=True)
         return {"temp": 28.0, "precipitation": 0.0, "wind_speed": 10.0, "elevation": 50}
 
 def sync_live_data():
@@ -147,6 +150,7 @@ def sync_live_data():
 
     for dest in destinations:
         process_dest(dest)
+        time.sleep(0.2)
 
     print("\n" + "="*60)
     print(f"SYNC COMPLETE!")
