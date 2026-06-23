@@ -344,7 +344,7 @@ export default function RiskMapScreen() {
       </View>
 
       {/* District list */}
-      <View style={[styles.districtListContainer, { bottom: insets.bottom + 100 }]}>
+      <View style={[styles.districtListContainer, { bottom: insets.bottom + 120 }]}>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.districtListContent}>
           {DISTRICTS.map(d => {
