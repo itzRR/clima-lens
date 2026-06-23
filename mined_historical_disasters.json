@@ -1,0 +1,2234 @@
+[
+  {
+    "id": "viharamahadevi_park",
+    "name": "Viharamahadevi Park",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Viharamahadevi (Sinhala:\u0dc0\u0dd2\u0dc4\u0dcf\u0dbb\u0db8\u0dc4\u0dcf\u0daf\u0dda\u0dc0\u0dd2) was the mother of King Dutugamunu, Saddhatissa and the Queen consort of King Kavantissa (King of the Ruhuna Sri"
+      }
+    ]
+  },
+  {
+    "id": "st._marys_church_negombo",
+    "name": "St. Marys Church Negombo",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Cathedral, Galle St. Mary's Cathedral, Jaffna St. Mary's Church, Negombo Liebfrauenkapelle (Rapperswil) (St. Mary Chapel) Saint Mary Church of the Holy Belt"
+      }
+    ]
+  },
+  {
+    "id": "henarathgoda_botanical_garden",
+    "name": "Henarathgoda Botanical Garden",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Henarathgoda Botanical Garden, also known as Gampaha Botanical Garden, is one of the six botanical gardens in Sri Lanka. The botanical garden is situated"
+      }
+    ]
+  },
+  {
+    "id": "richmond_castle",
+    "name": "Richmond Castle",
+    "disasters": [
+      {
+        "year": 2007,
+        "type": "cyclone",
+        "severity": "high",
+        "description": "2007. Retrieved 22 February 2006. \"Bathurst Bay, Qld: Cyclone (incl Storm Surge)\". EMA Disasters Database. Emergency Management Australia. Archived from"
+      }
+    ]
+  },
+  {
+    "id": "angurukaramulla_temple",
+    "name": "Angurukaramulla Temple",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "from there to Negombo. He visited the Angurukaramulla Bodhirama in Negombo and was ordained as Puwakdandawe Sri Chandraratana Dhammaloka Tissa for the"
+      }
+    ]
+  },
+  {
+    "id": "independence_square",
+    "name": "Independence Square",
+    "disasters": [
+      {
+        "year": 2005,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "Galle \"Preliminary Survey of Tsunami-affected Monuments and Sites in the Maritime Region of Sri Lanka\" (PDF). ICOMOS Sri Lanka. March 2005. Retrieved 1 July"
+      }
+    ]
+  },
+  {
+    "id": "kalutara_bodhiya",
+    "name": "Kalutara Bodhiya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Kalutara Bodhiya is a Bodhi tree (sacred fig) located in Kalutara, Western Province of Sri Lanka. Situated on the Galle Colombo main road, by the side"
+      }
+    ]
+  },
+  {
+    "id": "kelaniya_raja_maha_vihara",
+    "name": "Kelaniya Raja Maha Vihara",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "of Sri Lanka occurred in the mid-13th century, when the Malayan ruler[citation needed] Chandrabhanu Sridhamaraja of Tambralinga, invaded Sri Lanka twice"
+      }
+    ]
+  },
+  {
+    "id": "mount_lavinia_beach",
+    "name": "Mount Lavinia Beach",
+    "disasters": [
+      {
+        "year": 2004,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "News. 28 June 2004. \"Friends' tsunami summer aid visit\". BBC News. 1 June 2005. \"City of Batticaloa, Sri Lanka\". www.lanka.com. Retrieved 8 December 2016"
+      }
+    ]
+  },
+  {
+    "id": "peradeniya_botanical_gardens",
+    "name": "Peradeniya Botanical Gardens",
+    "disasters": [
+      {
+        "year": 2016,
+        "type": "disaster",
+        "severity": "high",
+        "description": "Royal Botanic Gardens, Peradeniya are about 5.5\u00a0km to the west of the city of Kandy in the Central Province of Sri Lanka. In 2016, the garden was visited"
+      }
+    ]
+  },
+  {
+    "id": "muthurajawela_marsh",
+    "name": "Muthurajawela Marsh",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Muthurajawela is a marsh in Sri Lanka in the southern region of the Negombo lagoon, 30\u00a0km (19\u00a0mi) north of Colombo. The Muthurajawela Marshes are 3,068\u00a0ha"
+      }
+    ]
+  },
+  {
+    "id": "kande_viharaya",
+    "name": "Kande Viharaya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Kande Vihara (Sinhala\u02d0 \u0d9a\u0db1\u0dca\u0daf\u0dda \u0dc0\u0dd2\u0dc4\u0dcf\u0dbb\u0dba) is a major Buddhist temple in Kalutara District, Sri Lanka. The temple has got its name 'Kande vihara' (Mountain"
+      }
+    ]
+  },
+  {
+    "id": "kelaniya_temple",
+    "name": "Kelaniya Temple",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "king who ruled Kelaniya (also known as Maya Rata) of Sri Lanka. He was the eldest son of King Dhamaraja and Queen Uttara Devi of Kelaniya. His brother was"
+      }
+    ]
+  },
+  {
+    "id": "beira_lake",
+    "name": "Beira Lake",
+    "disasters": [
+      {
+        "year": 2004,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "Station. List of named passenger trains of Sri Lanka Sri Lanka Railways 2004 Sri Lanka tsunami train wreck \"Sri Lanka Railways Timetable\" \"The Island\". Rampala"
+      }
+    ]
+  },
+  {
+    "id": "gadaladeniya_vihara",
+    "name": "Gadaladeniya Vihara",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "situated in Pilimathalawa, Kandy, Sri Lanka. It is located on Gadaladenyia Road (B116), just up from the Gadaladeniya junction of the Colombo - Kandy Road"
+      }
+    ]
+  },
+  {
+    "id": "nelum_pokuna",
+    "name": "Nelum Pokuna",
+    "disasters": [
+      {
+        "year": 2023,
+        "type": "disaster",
+        "severity": "high",
+        "description": "Media, was held on November 14, 2023, at the Nelum Pokuna Mahinda Rajapaksa Theatre, Colombo 07, Sri Lanka. His Excellency The President Ranil Wickramasinghe"
+      }
+    ]
+  },
+  {
+    "id": "calido_beach",
+    "name": "Calido Beach",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "\u0b95\u0bb3\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0bb1\u0bc8) or Kalutota is a major city in Kalutara District, Western Province, Sri Lanka. It is also the administrative capital of Kalutara District. It is located"
+      }
+    ]
+  },
+  {
+    "id": "gangaramaya_temple",
+    "name": "Gangaramaya Temple",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Gangaramaya Temple (Sinhala: \u0dc1\u0dca\u200d\u0dbb\u0dd3 \u0d9c\u0d82\u0d9c\u0dcf\u0dbb\u0dcf\u0db8 \u0db8\u0dc4\u0dcf\u0dc0\u0dd2\u0dc4\u0dcf\u0dbb\u0dba \u015br\u012b gang\u0101r\u0101ma mah\u0101wih\u0101raya, Tamil: \u0bb8\u0bcd\u0bb0\u0bc0 \u0b95\u0b99\u0bcd\u0b95\u0bbe\u0bb0\u0bbe\u0bae \u0bae\u0b95\u0bbe\u0bb5\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd Sr\u012b Ga\u1e45g\u0101r\u0101ma Mak\u0101vik\u0101ram) is one of the"
+      }
+    ]
+  },
+  {
+    "id": "negombo_beach",
+    "name": "Negombo Beach",
+    "disasters": [
+      {
+        "year": 2004,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "News. 28 June 2004. \"Friends' tsunami summer aid visit\". BBC News. 1 June 2005. \"City of Batticaloa, Sri Lanka\". www.lanka.com. Retrieved 8 December 2016"
+      }
+    ]
+  },
+  {
+    "id": "jami_ul_alfar_mosque",
+    "name": "Jami Ul-Alfar Mosque",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Jami-Ul-Alfar Mosque (Sinhala: \u0d9a\u0ddc\u0dbd\u0db9 \u0d9a\u0ddc\u0da7\u0dd4\u0dc0 \u0dbb\u0dad\u0dd4 \u0db4\u0dbd\u0dca\u0dbd\u0dd2\u0dba, romanized:\u00a0Kolomba Kotuwa Rathu Palliya, Tamil: \u0bae\u0bb8\u0bcd\u0b9c\u0bbf\u0ba4\u0bc1\u0bb2\u0bcd \u0b9c\u0bbe\u0bae\u0bbf\u0b89\u0bb2\u0bcd \u0b85\u0b83\u0baa\u0bbe\u0bb0\u0bcd \u0b85\u0bb2\u0bcd\u0bb2\u0ba4\u0bc1 \u0b9a\u0bae\u0bcd\u0bae\u0bbe\u0b99\u0bcd\u0b95\u0bcb\u0b9f\u0bc1 \u0baa\u0bb3\u0bcd\u0bb3\u0bbf\u0bb5\u0bbe\u0b9a\u0bb2\u0bcd"
+      }
+    ]
+  },
+  {
+    "id": "browns_beach",
+    "name": "Browns Beach",
+    "disasters": [
+      {
+        "year": 2016,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "2016. Retrieved 3 April 2016. Helgeson, T.J. (Spring 2005). \"Tsunami Disaster in Sri Lanka\". Waves of Devastation. University of Wisconsin-Eau Claire."
+      }
+    ]
+  },
+  {
+    "id": "attanagalla_temple",
+    "name": "Attanagalla Temple",
+    "disasters": [
+      {
+        "year": 1956,
+        "type": "disaster",
+        "severity": "high",
+        "description": "(\u0d86\u0dc3\u0dd2\u0dba\u0dcf\u0dc0\u0dda \u0dbb\u0dd2\u0daf\u0dd3 \u0dc3\u0dd3\u0db1\u0dd4\u0dc0), was a Sri Lankan statesman who served as the fourth Prime Minister of the Dominion of Ceylon (now Sri Lanka), serving from 1956 until"
+      }
+    ]
+  },
+  {
+    "id": "beruwala_lighthouse",
+    "name": "Beruwala Lighthouse",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Beruwala (Sinhala:\u0db6\u0dda\u0dbb\u0dd4\u0dc0\u0dbd Tamil: \u0baa\u0bc7\u0bb0\u0bc1\u0bb5\u0bb3\u0bc8) is a large town in Kalutara District, Western Province, Sri Lanka, governed by an Urban Council. The town covers"
+      }
+    ]
+  },
+  {
+    "id": "national_museum",
+    "name": "National Museum",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "flood",
+        "severity": "high",
+        "description": " A natural disaster might be caused by earthquakes, flooding, volcanic eruption, landslide, cyclones, etc. To be classified as a disaster, it must have"
+      }
+    ]
+  },
+  {
+    "id": "temple_of_the_tooth",
+    "name": "Temple of the Tooth",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "District, Sri Lanka, at the northernmost point of the island. Cotton is produced around Point Pedro in the fertile calcic red latosol soils. The eastern"
+      }
+    ]
+  },
+  {
+    "id": "pahiyangala_cave",
+    "name": "Pahiyangala Cave",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Fa Hien Cave, Faxian Cave, or Pahiyangala Cave is situated in the district of Kalutara, Western Province, Sri Lanka and according to a rural legend, named"
+      }
+    ]
+  },
+  {
+    "id": "udawatta_kele_sanctuary",
+    "name": "Udawatta Kele Sanctuary",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Udawattakele Forest Reserve often spelled as Udawatta Kele, is a historic forest reserve on a hill-ridge in the city of Kandy. It is 104 hectares (257"
+      }
+    ]
+  },
+  {
+    "id": "lankatilaka_vihara",
+    "name": "Lankatilaka Vihara",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Lankatilaka Vihara (Sinhala: \u0dbd\u0d82\u0d9a\u0dcf\u0dad\u0dd2\u0dbd\u0d9a \u0dc0\u0dd2\u0dc4\u0dcf\u0dbb\u0dba, romanized:\u00a0la\u1e41k\u0101tilaka vih\u0101raya, Tamil: \u0b87\u0bb2\u0b99\u0bcd\u0b95\u0bbe\u0ba4\u0bbf\u0bb2\u0b95 \u0bb5\u0bbf\u0b95\u0bbe\u0bb0\u0bc8, romanized:\u00a0Ila\u1e45k\u0101tilaka vik\u0101rai) is a Buddhist"
+      }
+    ]
+  },
+  {
+    "id": "brief_garden",
+    "name": "Brief Garden",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "cyclone",
+        "severity": "high",
+        "description": "Cyclonic Storm Ditwah was a weak but catastrophic tropical cyclone that brought heavy rain to Sri Lanka and Southern India in late November and early"
+      }
+    ]
+  },
+  {
+    "id": "martin_wickramasinghe_museum",
+    "name": "Martin Wickramasinghe Museum",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Libraries on the eastern coast of Sri Lanka and the northern province of Aceh on Sumatra were most severely affected by the disaster. Damage to libraries in India"
+      }
+    ]
+  },
+  {
+    "id": "kandy_lake",
+    "name": "Kandy Lake",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "the Central Province of Sri Lanka. It was the last capital of the Sinhalese monarchy from 1469 to 1818, under the Kingdom of Kandy. The city is situated"
+      }
+    ]
+  },
+  {
+    "id": "horton_plains",
+    "name": "Horton Plains",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "region. The Horton Plains are the headwaters of three major Sri Lankan rivers, the Mahaweli, Kelani, and Walawe rivers. In Sinhala the plains are known"
+      }
+    ]
+  },
+  {
+    "id": "koggala_lake",
+    "name": "Koggala Lake",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "on the south coast of Sri Lanka, located in Galle District, Southern Province, Sri Lanka, governed by an Urban Council. Koggala is bounded on one side"
+      }
+    ]
+  },
+  {
+    "id": "jungle_beach",
+    "name": "Jungle Beach",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Hikkaduwa, in south-west of Sri Lanka, is a large costal area covering eleven different villages over 6.5\u00a0km (4.0\u00a0mi) on the Indian Ocean, and 3\u00a0km (1"
+      }
+    ]
+  },
+  {
+    "id": "single_tree_hill",
+    "name": "Single Tree Hill",
+    "disasters": [
+      {
+        "year": 2016,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "2016. Retrieved 3 April 2016. Helgeson, T.J. (Spring 2005). \"Tsunami Disaster in Sri Lanka\". Waves of Devastation. University of Wisconsin-Eau Claire."
+      }
+    ]
+  },
+  {
+    "id": "sembuwatta_lake",
+    "name": "Sembuwatta Lake",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Sembuwatta Lake (Sinhala: \u0dc3\u0dd9\u0db8\u0dca\u0db9\u0dd4\u0dc0\u0dad\u0dca\u0dad \u0dc0\u0dd0\u0dc0) is a tourist attraction situated at Elkaduwa tea plantation in the Matale District of Sri Lanka, adjacent to"
+      }
+    ]
+  },
+  {
+    "id": "ambewela_farms",
+    "name": "Ambewela Farms",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": " it is one of the only few operating multi-megawatt wind farms in Sri Lanka. The wind farm consists of 12 wind turbines of 250 KW each, totalling the"
+      }
+    ]
+  },
+  {
+    "id": "bambarakiri_ella",
+    "name": "Bambarakiri Ella",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Sera Ella falls and Bambarakiri Ella Falls. Bodies of water: Sembuwaththa Lake, Kalu Ganga Reservoir List of towns in Central Province, Sri Lanka Department"
+      }
+    ]
+  },
+  {
+    "id": "devon_falls",
+    "name": "Devon Falls",
+    "disasters": [
+      {
+        "year": 2000,
+        "type": "cyclone",
+        "severity": "high",
+        "description": "Environment of Sri Lanka Extreme points of Sri Lanka 2000 Sri Lanka cyclone Sri Lanka portal Wikimedia Commons has media related to Geography of Sri Lanka. Wikimedia"
+      }
+    ]
+  },
+  {
+    "id": "unawatuna_beach",
+    "name": "Unawatuna Beach",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Unawatuna is a coastal town in Galle district of Sri Lanka. Unawatuna is a major tourist attraction in Sri Lanka and known for its beach and corals. It"
+      }
+    ]
+  },
+  {
+    "id": "sera_ella",
+    "name": "Sera Ella",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "waterfalls in Sri Lanka. Waterfalls less than 10\u00a0m (33\u00a0ft) in height are not included. List of rivers in Sri Lanka List of waterfalls \"Bambarakanda Ella Falls"
+      }
+    ]
+  },
+  {
+    "id": "yatagala_raja_maha_viharaya",
+    "name": "Yatagala Raja Maha Viharaya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": " not far from Exit 9 on the \u00a0E02\u00a0 Southern Expressway. Yatagala Raja Maha Viharaya (Yatagala Temple), is a rock temple with a 9m reclining Buddha, which"
+      }
+    ]
+  },
+  {
+    "id": "rumassala_pagoda",
+    "name": "Rumassala Pagoda",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Hanuman on the harbour end of Rumassala Hill by Japanese monks of the Mahayana sect of Buddhism near the Peace Pagoda that they built. A banished Indian"
+      }
+    ]
+  },
+  {
+    "id": "lovers_leap_waterfall",
+    "name": "Lovers Leap Waterfall",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Lover\u2019s Leap Falls (also spelled Lovers\u2019 Leap Falls) (Sinhala: \u0db4\u0dd9\u0db8\u0dca\u0dc0\u0dad\u0dd4\u0db1\u0dca\u0d9c\u0dda \u0daf\u0dd2\u0dba\u0d87\u0dbd\u0dca\u0dbd, \u0dbd\u0dc0\u0dbb\u0dca\u0dc3\u0dca \u0dbd\u0dd3\u0db4\u0dca \u0d87\u0dbd\u0dca\u0dbd) is a waterfall located near Nuwara Eliya, in the"
+      }
+    ]
+  },
+  {
+    "id": "dondra_head_lighthouse",
+    "name": "Dondra Head Lighthouse",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "extreme southernmost tip of Sri Lanka, in the Indian Ocean near Matara, Southern Province, Sri Lanka. The Dondra Head Lighthouse, ruins of several Hindu shrines"
+      }
+    ]
+  },
+  {
+    "id": "hikkaduwa_coral_reef",
+    "name": "Hikkaduwa Coral Reef",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Hikkaduwa, in south-west of Sri Lanka, is a large costal area covering eleven different villages over 6.5\u00a0km (4.0\u00a0mi) on the Indian Ocean, and 3\u00a0km (1"
+      }
+    ]
+  },
+  {
+    "id": "aluvihare_rock_temple",
+    "name": "Aluvihare Rock Temple",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The Aluvihare Rock Temple (also called Matale Alu Viharaya) is a sacred Buddhist temple located in Aluvihare, Matale District of Sri Lanka. Surrounded"
+      }
+    ]
+  },
+  {
+    "id": "pidurangala_rock",
+    "name": "Pidurangala Rock",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Pidurangala Vihara (Sinhala: \u0db4\u0dd2\u0daf\u0dd4\u0dbb\u0d82\u0d9c\u0dbd \u0dc0\u0dd2\u0dc4\u0dcf\u0dbb\u0dba) is an ancient Buddhist temple situated on Pidurangala Rock in Matale District, Sri Lanka. The rock is located"
+      }
+    ]
+  },
+  {
+    "id": "galle_fort",
+    "name": "Galle Fort",
+    "disasters": [
+      {
+        "year": 1992,
+        "type": "disaster",
+        "severity": "high",
+        "description": "Maritime Museum or National Maritime Archaeology Museum in Galle, Sri Lanka is situated within Galle Fort. It was first opened to the public on 9 May 1992 and"
+      }
+    ]
+  },
+  {
+    "id": "mihiripenna_beach",
+    "name": "Mihiripenna Beach",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "coastal town in Galle district of Sri Lanka. Unawatuna is a major tourist attraction in Sri Lanka and known for its beach and corals. It is a suburb of Galle"
+      }
+    ]
+  },
+  {
+    "id": "weligama_bay",
+    "name": "Weligama Bay",
+    "disasters": [
+      {
+        "year": 2016,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "2016. Retrieved 3 April 2016. Helgeson, T.J. (Spring 2005). \"Tsunami Disaster in Sri Lanka\". Waves of Devastation. University of Wisconsin-Eau Claire."
+      }
+    ]
+  },
+  {
+    "id": "ceylon_tea_museum",
+    "name": "Ceylon Tea Museum",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The National Maritime Museum or National Maritime Archaeology Museum in Galle, Sri Lanka is situated within Galle Fort. It was first opened to the public"
+      }
+    ]
+  },
+  {
+    "id": "st._clairs_falls",
+    "name": "St. Clairs Falls",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "St. Clair's Falls (Sinhala: \u0dc3\u0dcf\u0db1\u0dca\u0dad \u0d9a\u0dca\u0dbd\u0dd9\u0dba\u0dcf\u0dbb\u0dca \u0d87\u0dbd\u0dca\u0dbd) is one of the widest waterfalls in Sri Lanka and is commonly known as the \"Little Niagara of Sri Lanka\""
+      }
+    ]
+  },
+  {
+    "id": "sigiriya_rock_fortress",
+    "name": "Sigiriya Rock Fortress",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Sigiriya or Sinhagiri (Lion Rock Sinhala: \u0dc3\u0dd3\u0d9c\u0dd2\u0dbb\u0dd2\u0dba, Tamil: \u0b9a\u0bbf\u0b95\u0bbf\u0bb0\u0bbf\u0baf\u0bbe/\u0b9a\u0bbf\u0b99\u0bcd\u0b95\u0b95\u0bbf\u0bb0\u0bbf, /\u02c8si\u02d0\u0261\u026ar\u026aj\u0259/) is an ancient rock fortress located in the northern Matale"
+      }
+    ]
+  },
+  {
+    "id": "pitawala_pathana",
+    "name": "Pitawala Pathana",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Pitawala Pathana is a unique grassland found in the Knuckles Conservation Forest, Sri Lanka. This pathana has a great ecological value. This grassland"
+      }
+    ]
+  },
+  {
+    "id": "polhena_beach",
+    "name": "Polhena Beach",
+    "disasters": [
+      {
+        "year": 2022,
+        "type": "disaster",
+        "severity": "high",
+        "description": "21 May 2022. \"Tour Sri lanka - Polhena Beach Sri lanka\". tour.lk. Retrieved 8 December 2016. \"City of Tangalle, Sri Lanka\". www.lanka.com. Retrieved 8 December"
+      }
+    ]
+  },
+  {
+    "id": "riverston",
+    "name": "Riverston",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Andawala is a remote village in Sri Lanka's Central Province. There are 3 roads to access Andawala by a vehicle. First is via Matale, Madawala Uplatha"
+      }
+    ]
+  },
+  {
+    "id": "gregory_lake",
+    "name": "Gregory Lake",
+    "disasters": [
+      {
+        "year": 2021,
+        "type": "tsunami",
+        "severity": "high",
+        "description": " Wegmann, Karl (12 January 2021). \"HazBlog-007: Landslide generated tsunami \u2013 the 2007 Chehalis Lake, B.C. Canada Example\". hazmapper.org. Retrieved 16"
+      }
+    ]
+  },
+  {
+    "id": "knuckles_mountain_range",
+    "name": "Knuckles Mountain Range",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The Dumbara Mountain Range lies in central Sri Lanka, in the Districts of Matale and Kandy. The Sinhalese residents have traditionally referred to the"
+      }
+    ]
+  },
+  {
+    "id": "dry_zone_botanic_gardens",
+    "name": "Dry Zone Botanic Gardens",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Mirijjawila Botanical Garden is one of the five botanical gardens in Sri Lanka. The other botanical gardens are Peradeniya Botanical Garden, Hakgala Botanical Garden"
+      }
+    ]
+  },
+  {
+    "id": "yala_national_park",
+    "name": "Yala National Park",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "flood",
+        "severity": "high",
+        "description": "several thousand in Thailand. Floods also affected 1,100,000 people in Sri Lanka. Malaysian Meteorological Department National Weather Centre senior meteorological"
+      }
+    ]
+  },
+  {
+    "id": "jaffna_fort",
+    "name": "Jaffna Fort",
+    "disasters": [
+      {
+        "year": 1992,
+        "type": "disaster",
+        "severity": "high",
+        "description": "Museum or National Maritime Archaeology Museum in Galle, Sri Lanka is situated within Galle Fort. It was first opened to the public on 9 May 1992 and is"
+      }
+    ]
+  },
+  {
+    "id": "pooneryn_fort",
+    "name": "Pooneryn Fort",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "No. 4 (VVIP/VIP) Helicopter Squadron is a squadron of the Sri Lanka Air Force. It currently operates Bell 412/412EP/212/206JR from SLAF Ratmalana for"
+      }
+    ]
+  },
+  {
+    "id": "dambakola_patuna",
+    "name": "Dambakola Patuna",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Dambakola Patuna (Sinhala: \u0daf\u0db9\u0d9a\u0ddc\u0dc5 \u0db4\u0da7\u0dd4\u0db1; Tamil: \u0b9c\u0bae\u0bcd\u0baa\u0bc1\u0b95\u0bcb\u0bb2\u0baa\u0bcd\u0baa\u0b9f\u0bcd\u0b9f\u0bbf\u0ba9\u0bae\u0bcd ) is an ancient port to the north of Jaffna, in the Northern Province of Sri Lanka."
+      }
+    ]
+  },
+  {
+    "id": "delft_island",
+    "name": "Delft Island",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "romanized:\u00a0K\u0101lik K\u014d\u1e6d\u1e6dai), in the Bay of Galle on the southwest coast of Sri Lanka, was built first in 1588 by the Portuguese, then extensively fortified"
+      }
+    ]
+  },
+  {
+    "id": "elephant_pass",
+    "name": "Elephant Pass",
+    "disasters": [
+      {
+        "year": 2004,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "in Sri Lanka in the 2004 Indian Ocean earthquake. It is possible that certain animals (e.g., elephants) may have heard the sounds of the tsunami as it"
+      }
+    ]
+  },
+  {
+    "id": "nainativu_nagapooshani",
+    "name": "Nainativu Nagapooshani",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "island of Nainativu, Sri Lanka and is one the 51 Shakta pithas of the goddess. The temple is dedicated to Parvati who is known as Nagapooshani or Bhuvaneswari"
+      }
+    ]
+  },
+  {
+    "id": "point_pedro",
+    "name": "Point Pedro",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": " located in Jaffna District, Sri Lanka, at the northernmost point of the island. Cotton is produced around Point Pedro in the fertile calcic red latosol"
+      }
+    ]
+  },
+  {
+    "id": "bundala_national_park",
+    "name": "Bundala National Park",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Bundala National Park is an internationally important wintering ground for migratory water birds in Sri Lanka. Bundala harbors 197 species of birds, the"
+      }
+    ]
+  },
+  {
+    "id": "kataragama_temple",
+    "name": "Kataragama Temple",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "indigenous Vedda people of Sri Lanka. People from South India also go there to worship. The town has the Kataragama temple, a shrine dedicated to Skanda"
+      }
+    ]
+  },
+  {
+    "id": "mirijjawila",
+    "name": "Mirijjawila",
+    "disasters": [
+      {
+        "year": 2004,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "in Hambantota District, Southern Province, Sri Lanka. This area was hit hard by the 2004 Indian Ocean tsunami and underwent a number of major development"
+      }
+    ]
+  },
+  {
+    "id": "iranamadu_tank",
+    "name": "Iranamadu Tank",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "flood",
+        "severity": "high",
+        "description": "flash floods in the Northern part of the island. More than 11000 people are staying in 35 evacuation centres. The sluice gates of Iranamadu Tank were opened"
+      }
+    ]
+  },
+  {
+    "id": "mannar_fort",
+    "name": "Mannar Fort",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The Sri Lanka Railway Department (more commonly known as Sri Lanka Railways (SLR)) (Sinhala: \u0dc1\u0dca\u200d\u0dbb\u0dd3 \u0dbd\u0d82\u0d9a\u0dcf \u0daf\u0dd4\u0db8\u0dca\u0dbb\u0dd2\u0dba \u0dc3\u0dda\u0dc0\u0dba \u015ar\u012b La\u1e43k\u0101 Dumriya S\u0113vaya; Tamil: \u0b87\u0bb2\u0b99\u0bcd\u0b95\u0bc8"
+      }
+    ]
+  },
+  {
+    "id": "kantharodai_ruins",
+    "name": "Kantharodai Ruins",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Ancient Kantharodai Historical Site with some remains of Stupas is situated in Kandarodai village in Chunnakam, Sri Lanka. The temple is considered one"
+      }
+    ]
+  },
+  {
+    "id": "keerimalai_springs",
+    "name": "Keerimalai Springs",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "venerated by Sri Lankan Tamil Hindus around the world from classical antiquity. Hindus believe its adjacent water tank, the Keerimalai Springs, to have curative"
+      }
+    ]
+  },
+  {
+    "id": "casuarina_beach",
+    "name": "Casuarina Beach",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "India in the east. Its southern limit is a line between Sangaman Kanda in Sri Lanka, and the northwesternmost point of Sumatra in Indonesia. Major river systems"
+      }
+    ]
+  },
+  {
+    "id": "shrine_of_our_lady_of_madhu",
+    "name": "Shrine of Our Lady of Madhu",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Shrine of Our Lady of Matara is a Roman Catholic church devoted to the Virgin Mary, in the town of Matara, Sri Lanka. The shrine houses a statue of the"
+      }
+    ]
+  },
+  {
+    "id": "ussangoda_national_park",
+    "name": "Ussangoda National Park",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "National parks are a class of protected areas in Sri Lanka and are administered by the Department of Wildlife Conservation. National parks are governed"
+      }
+    ]
+  },
+  {
+    "id": "jaffna_public_library",
+    "name": "Jaffna Public Library",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "publicly sides with the cause of ethnic Sri Lankan Tamils in the Sri Lankan Civil War. It has issued a number of statements calling for an end to Sri"
+      }
+    ]
+  },
+  {
+    "id": "kilinochchi_water_tower",
+    "name": "Kilinochchi Water Tower",
+    "disasters": [
+      {
+        "year": 2012,
+        "type": "disaster",
+        "severity": "high",
+        "description": "This is a list of Archaeological Protected Monuments in Jaffna District, Sri Lanka. \"Protercted Monument List 2012-12-12\" (PDF). Department of Archaeology"
+      }
+    ]
+  },
+  {
+    "id": "parrot_rock_bridge",
+    "name": "Parrot Rock Bridge",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "question marks, boxes, or other symbols. Sri Lanka, officially the Democratic Socialist Republic of Sri Lanka, formerly known as Ceylon, is an island country"
+      }
+    ]
+  },
+  {
+    "id": "batticaloa_lagoon",
+    "name": "Batticaloa Lagoon",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "cyclone",
+        "severity": "high",
+        "description": "Cyclonic Storm Ditwah was a weak but catastrophic tropical cyclone that brought heavy rain to Sri Lanka and Southern India in late November and early"
+      }
+    ]
+  },
+  {
+    "id": "sivan_kovil_kilinochchi",
+    "name": "Sivan Kovil Kilinochchi",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "in Sri Lanka. Sri muthumari Amman thirukkovil, ayojanagama, Kandy Sri Muthumari Amman Kovil, Mahaiyawa, Kandy Kurinchi Kumaran Temple, Peradeniya Sri Devi"
+      }
+    ]
+  },
+  {
+    "id": "secret_beach_mirissa",
+    "name": "Secret Beach Mirissa",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Mirissa (Sinhala: \u0db8\u0dd2\u0dbb\u0dd2\u0dc3\u0dca\u0dc3, romanized:\u00a0Mirissa; Tamil: \u0bae\u0bbf\u0bb0\u0bbf\u0bb8\u0bcd\u0bb8, romanized:\u00a0Miris'sa) is a small town on the south coast of Sri Lanka, located in the Matara"
+      }
+    ]
+  },
+  {
+    "id": "vaddakachchi",
+    "name": "Vaddakachchi",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The following is a list of massacres that have occurred in Sri Lanka and its predecessors. (Numbers may be approximate.) All males between 15 and 60 years"
+      }
+    ]
+  },
+  {
+    "id": "kilinochchi_war_memorial",
+    "name": "Kilinochchi War Memorial",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Sara\", was the coordinator of Jesuit Refugee Service for Kilinochchi district in Sri Lanka. He refused to abandon the refugees, including orphan children"
+      }
+    ]
+  },
+  {
+    "id": "coconut_tree_hill",
+    "name": "Coconut Tree Hill",
+    "disasters": [
+      {
+        "year": 2016,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "2016. Retrieved 3 April 2016. Helgeson, T.J. (Spring 2005). \"Tsunami Disaster in Sri Lanka\". Waves of Devastation. University of Wisconsin-Eau Claire."
+      }
+    ]
+  },
+  {
+    "id": "talaimannar_pier",
+    "name": "Talaimannar Pier",
+    "disasters": [
+      {
+        "year": 1914,
+        "type": "disaster",
+        "severity": "high",
+        "description": "conducted. By 1914, the Mannar line was built to connect Talaimannar on Mannar Island to the Sri Lankan mainland. On the Indian side, the Indian railway network"
+      }
+    ]
+  },
+  {
+    "id": "kalametiya_bird_sanctuary",
+    "name": "Kalametiya Bird Sanctuary",
+    "disasters": [
+      {
+        "year": 1938,
+        "type": "disaster",
+        "severity": "high",
+        "description": "blowhole in Sri Lanka. Kalametiya Bird Sanctuary is 24\u00a0km (15\u00a0mi) east of the town. The Kalametiya Bird Sanctuary was declared a wildlife sanctuary in 1938"
+      }
+    ]
+  },
+  {
+    "id": "hambantota_salt_pans",
+    "name": "Hambantota Salt Pans",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "internationally important wintering ground for migratory water birds in Sri Lanka. Bundala harbors 197 species of birds, the highlight being the greater"
+      }
+    ]
+  },
+  {
+    "id": "akkarayan_kulam",
+    "name": "Akkarayan Kulam",
+    "disasters": [
+      {
+        "year": 1957,
+        "type": "flood",
+        "severity": "high",
+        "description": " Sri Lanka. The reservoir is used to store water brings from Kala Wewa through Yodha Ela channel. The reservoir was severely damaged in 1957 flood and"
+      }
+    ]
+  },
+  {
+    "id": "vavuniya_lake",
+    "name": "Vavuniya Lake",
+    "disasters": [
+      {
+        "year": 2006,
+        "type": "disaster",
+        "severity": "high",
+        "description": "railway stations in Sri Lanka Road Map of Sri Lanka, published by Survey department of Sri Lanka, 1st edition 2006 Road Map of Sri Lanka, published by Survey"
+      }
+    ]
+  },
+  {
+    "id": "chundikulam_bird_sanctuary",
+    "name": "Chundikulam Bird Sanctuary",
+    "disasters": [
+      {
+        "year": 2012,
+        "type": "disaster",
+        "severity": "high",
+        "description": "opened the Chundikulam Nature Park Holiday Resort in the northern part of the sanctuary in January 2012. Following the end of the Sri Lankan Civil War"
+      }
+    ]
+  },
+  {
+    "id": "mullaitivu_beach",
+    "name": "Mullaitivu Beach",
+    "disasters": [
+      {
+        "year": 2016,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "2016. Retrieved 3 April 2016. Helgeson, T.J. (Spring 2005). \"Tsunami Disaster in Sri Lanka\". Waves of Devastation. University of Wisconsin-Eau Claire."
+      }
+    ]
+  },
+  {
+    "id": "kallady_bridge",
+    "name": "Kallady Bridge",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Lagoon near the Kallady Bridge. BBC Radio 4 was able to record the mysterious sound in Batticaloa Lagoon. The sound was broadcast by Sri Lanka Broadcasting"
+      }
+    ]
+  },
+  {
+    "id": "nilaveli_beach",
+    "name": "Nilaveli Beach",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "moon-shine over the \"v\u00e8li\", a Sri Lankan Tamil language term for land or open-space. The 10th century CE Tamil Nilaveli inscriptions mention the Koneswaram"
+      }
+    ]
+  },
+  {
+    "id": "ridi_viharaya",
+    "name": "Ridi Viharaya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Ridi Viharaya (Sinhala: \u0dbb\u0dd2\u0daf\u0dd3 \u0dc0\u0dd2\u0dc4\u0dcf\u0dbb\u0dba) or Silver Temple is a 2nd-century BCE Theravada Buddhist temple in the village of Ridigama, Sri Lanka. Built during"
+      }
+    ]
+  },
+  {
+    "id": "oddusuddan",
+    "name": "Oddusuddan",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The Oddusuddan offensive was a military operation in which the Tamil Tigers captured Oddusuddan from the Sri Lankan Army. They were also believed to have"
+      }
+    ]
+  },
+  {
+    "id": "kurunegala_clock_tower",
+    "name": "Kurunegala Clock Tower",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Kurunegala (Sinhala: \u0d9a\u0dd4\u0dbb\u0dd4\u0dab\u0dd1\u0d9c\u0dbd, IPA: [kurun\u00e6\u02d0\u0261\u0259l\u0259]; Tamil: \u0b95\u0bc1\u0bb0\u0bc1\u0ba3\u0bbe\u0b95\u0bb2\u0bcd, IPA: [ku\u027eu\u0273a\u02d0\u0263\u0250l]) is a major city in Sri Lanka. It is the capital city of the North"
+      }
+    ]
+  },
+  {
+    "id": "kandasamy_kovil",
+    "name": "Kandasamy Kovil",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "ancient kovils (temples) built in dedication to the Hindu supreme being Ishvara in the form of the god Shiva, located along the circumference of Sri Lanka. The"
+      }
+    ]
+  },
+  {
+    "id": "trincomalee_war_cemetery",
+    "name": "Trincomalee War Cemetery",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Trincomalee District and major resort port city of Eastern Province, Sri Lanka. Located on the east coast of the island overlooking the Trincomalee Harbour"
+      }
+    ]
+  },
+  {
+    "id": "kokkilai_bird_sanctuary",
+    "name": "Kokkilai Bird Sanctuary",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Kokkilai Sanctuary (Tamil: \u0b95\u0bca\u0b95\u0bcd\u0b95\u0bc1\u0bb3\u0bbe\u0baf\u0bcd \u0b9a\u0bb0\u0ba3\u0bbe\u0bb2\u0baf\u0bae\u0bcd Kokku\u1e37\u0101y Cara\u1e47\u0101layam) is a wildlife sanctuary in north eastern Sri Lanka, approximately 25\u00a0km (16\u00a0mi) south"
+      }
+    ]
+  },
+  {
+    "id": "batticaloa_fort",
+    "name": "Batticaloa Fort",
+    "disasters": [
+      {
+        "year": 1992,
+        "type": "disaster",
+        "severity": "high",
+        "description": "Museum or National Maritime Archaeology Museum in Galle, Sri Lanka is situated within Galle Fort. It was first opened to the public on 9 May 1992 and is"
+      }
+    ]
+  },
+  {
+    "id": "vadduvakal_bridge",
+    "name": "Vadduvakal Bridge",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "subjected to enforced disappearance after surrendering to the Sri Lankan Army around Vadduvakal Bridge in Mullaitivu. The report stated that they represented"
+      }
+    ]
+  },
+  {
+    "id": "mannar_bird_sanctuary",
+    "name": "Mannar Bird Sanctuary",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "northern Sri Lanka, approximately 12\u00a0km (7\u00a0mi) north east of Kilinochchi. Chundikkulam Lagoon and its surrounding area was designated as a bird sanctuary on"
+      }
+    ]
+  },
+  {
+    "id": "nanthikadal_lagoon",
+    "name": "Nanthikadal Lagoon",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Sinhala: \u0db1\u0db1\u0dca\u0dad\u0dd2 \u0d9a\u0da9\u0dcf\u0dbd\u0dca, romanized:\u00a0nanti ka\u1e0d\u0101l) is a lagoon in Mullaitivu District, north-east Sri Lanka. The English translation of Nanthi Kadal is \"the"
+      }
+    ]
+  },
+  {
+    "id": "pasikudah_beach",
+    "name": "Pasikudah Beach",
+    "disasters": [
+      {
+        "year": 2007,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "(2007). \"Revival of Tourism in Sri Lanka Following the December 2004 Indian Ocean Tsunami\". Journal of Natural Disaster Science. 29 (2): 83\u201395. \"Resilience"
+      }
+    ]
+  },
+  {
+    "id": "nayaru_beach",
+    "name": "Nayaru Beach",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": " Akudi Nadu Ambattur Nadu Athoor Nadu Elumur Nadu (present-day Egmore) Nayaru Nadu (present-day Parry's Corner, Sowcarpet, Fort St George, Thiruvottriyur"
+      }
+    ]
+  },
+  {
+    "id": "baobab_tree_mannar",
+    "name": "Baobab Tree Mannar",
+    "disasters": [
+      {
+        "year": 2012,
+        "type": "disaster",
+        "severity": "high",
+        "description": "This is a list of Archaeological Protected Monuments in Mannar District, Sri Lanka. \"Protercted Monument List 2012-12-12 (In Sinhala)\" (PDF). Department"
+      }
+    ]
+  },
+  {
+    "id": "vavuniya_archaeological_museum",
+    "name": "Vavuniya Archaeological Museum",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The National Maritime Museum or National Maritime Archaeology Museum in Galle, Sri Lanka is situated within Galle Fort. It was first opened to the public"
+      }
+    ]
+  },
+  {
+    "id": "omanthai",
+    "name": "Omanthai",
+    "disasters": [
+      {
+        "year": 1997,
+        "type": "disaster",
+        "severity": "high",
+        "description": "The Thandikulam\u2013Omanthai offensive was a battle for the control of the towns of Thandikulam and Omanthai in Sri Lanka in June 1997. The battle began on"
+      }
+    ]
+  },
+  {
+    "id": "madukanda_vihara",
+    "name": "Madukanda Vihara",
+    "disasters": [
+      {
+        "year": 2012,
+        "type": "disaster",
+        "severity": "high",
+        "description": "is a list of Archaeological Protected Monuments in Vavuniya District, Sri Lanka. \"Protercted Monument List 2012-12-12 (In Sinhala)\" (PDF). Department"
+      }
+    ]
+  },
+  {
+    "id": "pampaimadu",
+    "name": "Pampaimadu",
+    "disasters": [
+      {
+        "year": 2012,
+        "type": "disaster",
+        "severity": "high",
+        "description": "is a list of Archaeological Protected Monuments in Vavuniya District, Sri Lanka. \"Protercted Monument List 2012-12-12 (In Sinhala)\" (PDF). Department"
+      }
+    ]
+  },
+  {
+    "id": "thandikulam",
+    "name": "Thandikulam",
+    "disasters": [
+      {
+        "year": 1997,
+        "type": "disaster",
+        "severity": "high",
+        "description": "The Thandikulam\u2013Omanthai offensive was a battle for the control of the towns of Thandikulam and Omanthai in Sri Lanka in June 1997. The battle began on"
+      }
+    ]
+  },
+  {
+    "id": "giants_tank",
+    "name": "Giants Tank",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "flood",
+        "severity": "high",
+        "description": "lost relatives in the floods. 12 cyclone shelters were built in Nagapattinam district, while 11 teams of the National Disaster Response Force (NDRF) were"
+      }
+    ]
+  },
+  {
+    "id": "batticaloa_lighthouse",
+    "name": "Batticaloa Lighthouse",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Sri Lanka, and its former capital. It is the administrative capital of the Batticaloa District. The city is the seat of the Eastern University of Sri"
+      }
+    ]
+  },
+  {
+    "id": "kanniya_hot_springs",
+    "name": "Kanniya Hot Springs",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The Kanniya Hot Springs (Sinhala: \u0d9a\u0db1\u0dca\u0db1\u0dd2\u0dba\u0dcf \u0d8b\u0dab\u0dd4\u0daf\u0dd2\u0dba \u0dbd\u0dd2\u0d82, Tamil: \u0b95\u0ba9\u0bcd\u0ba9\u0bbf\u0baf\u0bbe \u0bb5\u0bc6\u0ba8\u0bcd\u0ba8\u0bc0\u0bb0\u0bc2\u0bb1\u0bcd\u0bb1\u0bc1) is a site with hot wells located in Trincomalee, Sri Lanka. There are"
+      }
+    ]
+  },
+  {
+    "id": "adams_bridge",
+    "name": "Adams Bridge",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "flood",
+        "severity": "high",
+        "description": "hazard). Examples of natural disasters with highly harmful impacts on a society are floods, droughts, earthquakes, tropical cyclones, lightning strikes, volcanic"
+      }
+    ]
+  },
+  {
+    "id": "athugala_viharaya",
+    "name": "Athugala Viharaya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "elephant, which explains the rock's name. It houses a temple, the Athugala Viharaya, and an 27\u00a0m (88\u00a0ft) high seated Buddha statue at its top. Wikimedia"
+      }
+    ]
+  },
+  {
+    "id": "ethagala_elephant_rock",
+    "name": "Ethagala Elephant Rock",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Ethagala (Sinhala: \u0d87\u0dad\u0dcf\u0d9c\u0dbd) (English:Elephant Rock) is one of seven rocks that overlook the town of Kurunegala, in Sri Lanka. The rock face reaches 316 metres"
+      }
+    ]
+  },
+  {
+    "id": "wilpattu_national_park",
+    "name": "Wilpattu National Park",
+    "disasters": [
+      {
+        "year": 2016,
+        "type": "flood",
+        "severity": "high",
+        "description": "Cyclonic Storm Roanu was a relatively weak tropical cyclone that caused severe flooding in Sri Lanka and Bangladesh during May\u00a02016. It was the first tropical"
+      }
+    ]
+  },
+  {
+    "id": "kokkadichcholai_temple",
+    "name": "Kokkadichcholai Temple",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Kokkadichcholai (Tamil: \u0b95\u0bca\u0b95\u0bcd\u0b95\u0b9f\u0bcd\u0b9f\u0bbf\u0b9a\u0bcd\u0b9a\u0bcb\u0bb2\u0bc8) is a village in Batticaloa District in the Eastern Province of Sri Lanka. According to legend, the name of the"
+      }
+    ]
+  },
+  {
+    "id": "magul_maha_viharaya",
+    "name": "Magul Maha Viharaya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Magul Maha Viharaya is an ancient Buddhist temple situated in Lahugala, Ampara District of Sri Lanka. The temple lies on the northern edge of the Lahugala"
+      }
+    ]
+  },
+  {
+    "id": "mamangam_temple",
+    "name": "Mamangam Temple",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "inhabitants of Eastern Sri Lanka praise that it is unusual to apply the sacred term \"Thirukkovil\" to not only a specific temple but to its whereabout too"
+      }
+    ]
+  },
+  {
+    "id": "kalpitiya_peninsula",
+    "name": "Kalpitiya Peninsula",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "coastal town located in western region of Puttalam District. The Kalpitiya peninsula consists of a total fourteen islands. It is developing as a tourist"
+      }
+    ]
+  },
+  {
+    "id": "muhudu_maha_viharaya",
+    "name": "Muhudu Maha Viharaya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Muhudu Maha Vihara (Sinhala\u02d0 \u0db8\u0dd4\u0dc4\u0dd4\u0daf\u0dd4 \u0db8\u0dc4\u0dcf \u0dc0\u0dd2\u0dc4\u0dcf\u0dbb\u0dba) is a Buddhist temple at Pottuvil in Ampara District, Eastern province of Sri Lanka. This temple, near a"
+      }
+    ]
+  },
+  {
+    "id": "yapahuwa",
+    "name": "Yapahuwa",
+    "disasters": [
+      {
+        "year": 2005,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "Galle \"Preliminary Survey of Tsunami-affected Monuments and Sites in the Maritime Region of Sri Lanka\" (PDF). ICOMOS Sri Lanka. March 2005. Retrieved 1 July"
+      }
+    ]
+  },
+  {
+    "id": "gal_oya_national_park",
+    "name": "Gal Oya National Park",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "List of railway stations in Sri Lanka, in alphabetical order, are as follows: Abanpola, North Western Province Agbopura, Eastern Province Ahangama, Southern"
+      }
+    ]
+  },
+  {
+    "id": "arankele_forest_monastery",
+    "name": "Arankele Forest Monastery",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "a mountain in central Sri Lanka which is home to an ancient Buddhist monastery. The ruins and rock inscriptions of the monastery date back to 1st century"
+      }
+    ]
+  },
+  {
+    "id": "munneswaram_temple",
+    "name": "Munneswaram Temple",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "musicians, and politicians from a variety of political parties in India and Sri Lanka. The annual conventions were held jointly with the Indian-American Tamil"
+      }
+    ]
+  },
+  {
+    "id": "uppuveli_beach",
+    "name": "Uppuveli Beach",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Uppuveli (Tamil: \u0b89\u0baa\u0bcd\u0baa\u0bc1\u0bb5\u0bc6\u0bb3\u0bbf) is a gold sand coastal resort town of the Trincomalee District, Sri Lanka located in the suburb of Sambalativu, 6\u00a0km northwest"
+      }
+    ]
+  },
+  {
+    "id": "marble_beach",
+    "name": "Marble Beach",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "architecture of St. George's Cathedral is remarkable for its tall spire, pillars, marble statues, mural tablets and memorials inside. The cathedral is a piece of"
+      }
+    ]
+  },
+  {
+    "id": "dambadeniya",
+    "name": "Dambadeniya",
+    "disasters": [
+      {
+        "year": 2005,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "Galle \"Preliminary Survey of Tsunami-affected Monuments and Sites in the Maritime Region of Sri Lanka\" (PDF). ICOMOS Sri Lanka. March 2005. Retrieved 1 July"
+      }
+    ]
+  },
+  {
+    "id": "arugam_bay",
+    "name": "Arugam Bay",
+    "disasters": [
+      {
+        "year": 2008,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "government. Robinson, Lyn (2008). \"Post-disaster community tourism recovery: the tsunami and Arugam Bay, Sri Lanka\". Disasters. 32 (4): 631\u2013645. Bibcode:2008Disas"
+      }
+    ]
+  },
+  {
+    "id": "pigeon_island",
+    "name": "Pigeon Island",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Pigeon Island National Park is one of the three marine national parks of Sri Lanka. The national park is situated 1\u00a0km off the coast of Nilaveli, a coastal"
+      }
+    ]
+  },
+  {
+    "id": "polonnaruwa_museum",
+    "name": "Polonnaruwa Museum",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "that of Northern Sri Lanka which would later form the Sri Lankan Tamil community of today. The Sinhalese Kingdom now located in Polonnaruwa lasted less than"
+      }
+    ]
+  },
+  {
+    "id": "fort_frederick",
+    "name": "Fort Frederick",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The Sri Lanka Railway Department (more commonly known as Sri Lanka Railways (SLR)) (Sinhala: \u0dc1\u0dca\u200d\u0dbb\u0dd3 \u0dbd\u0d82\u0d9a\u0dcf \u0daf\u0dd4\u0db8\u0dca\u0dbb\u0dd2\u0dba \u0dc3\u0dda\u0dc0\u0dba \u015ar\u012b La\u1e43k\u0101 Dumriya S\u0113vaya; Tamil: \u0b87\u0bb2\u0b99\u0bcd\u0b95\u0bc8"
+      }
+    ]
+  },
+  {
+    "id": "st_annes_shrine_talawila",
+    "name": "St Annes Shrine Talawila",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Wayamba Pa\u1e37\u0101ta, Tamil: \u0bb5\u0b9f \u0bae\u0bc7\u0bb2\u0bcd \u0bae\u0bbe\u0b95\u0bbe\u0ba3\u0bae\u0bcd Vada Mael M\u0101k\u0101\u1e47am) is a province of Sri Lanka. It is the fourth-largest province by land area, covering 7,888\u00a0km2 (3"
+      }
+    ]
+  },
+  {
+    "id": "panduwasnuwara",
+    "name": "Panduwasnuwara",
+    "disasters": [
+      {
+        "year": 2005,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "Galle \"Preliminary Survey of Tsunami-affected Monuments and Sites in the Maritime Region of Sri Lanka\" (PDF). ICOMOS Sri Lanka. March 2005. Retrieved 1 July"
+      }
+    ]
+  },
+  {
+    "id": "panama_beach",
+    "name": "Panama Beach",
+    "disasters": [
+      {
+        "year": 2015,
+        "type": "cyclone",
+        "severity": "high",
+        "description": "dead link] \"Tropical cyclones affecting Broome\". Bureau of Meteorology. Retrieved 17 July 2015. \"Eighty Mile Beach, WA: Cyclone\". Archived from the original"
+      }
+    ]
+  },
+  {
+    "id": "senanayake_samudraya",
+    "name": "Senanayake Samudraya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Senanayake Samudraya (Sinhala: \u0dc3\u0dda\u0db1\u0dcf\u0db1\u0dcf\u0dba\u0d9a \u0dc3\u0db8\u0dd4\u0daf\u0dca\u200d\u0dbb\u0dba, Tamil: \u0b9a\u0bc7\u0ba9\u0bbe\u0ba9\u0bbe\u0baf\u0b95\u0bcd\u0b95 \u0b9a\u0bae\u0bc2\u0ba4\u0bcd\u0bb0\u0baf) is the biggest reservoir and man-made lake in Sri Lanka. It is locally known"
+      }
+    ]
+  },
+  {
+    "id": "liptons_seat",
+    "name": "Liptons Seat",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "use of the Lipton brand for tea in India, Nepal, Indonesia, and Sri Lanka as well as for ready to drink beverages globally, such as Lipton Ice Tea, which"
+      }
+    ]
+  },
+  {
+    "id": "samadhi_statue",
+    "name": "Samadhi Statue",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The Samadhi Buddha is a famous statue situated at Mahamevn\u0101wa Park in Anuradhapura, Sri Lanka. The Buddha is depicted in the position of the Dhyana Mudra"
+      }
+    ]
+  },
+  {
+    "id": "sri_maha_bodhi",
+    "name": "Sri Maha Bodhi",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Sri Lanka Maha Bodhi Centre is a Sri Lankan Buddhist establishment in Chennai, India. It is located in Egmore. It is run by the Sri Lanka Maha Bodhi Society"
+      }
+    ]
+  },
+  {
+    "id": "dutch_fort_kalpitiya",
+    "name": "Dutch Fort Kalpitiya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Commons has media related to Kalpitiya. Wikivoyage has a travel guide for Kalpitiya. \"Kalpitiya (Divisional Secretariat, Sri Lanka) - Population Statistics"
+      }
+    ]
+  },
+  {
+    "id": "anawilundawa_bird_sanctuary",
+    "name": "Anawilundawa Bird Sanctuary",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "include the Anawilundawa Sanctuary, Bellanwilla - Attidiya Sanctuary, Bundala National Park, Gal Oya National Park, Giants' Tank Sanctuary, Kumana National"
+      }
+    ]
+  },
+  {
+    "id": "thivanka_image_house",
+    "name": "Thivanka Image House",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "only the Vijjadhara Guha is a cave, while the others were image houses similar to the Thivanka and Lankathilaka, with their walls connected to the rock"
+      }
+    ]
+  },
+  {
+    "id": "pottuvil_point",
+    "name": "Pottuvil Point",
+    "disasters": [
+      {
+        "year": 2008,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "government. Robinson, Lyn (2008). \"Post-disaster community tourism recovery: the tsunami and Arugam Bay, Sri Lanka\". Disasters. 32 (4): 631\u2013645. Bibcode:2008Disas"
+      }
+    ]
+  },
+  {
+    "id": "rankoth_vehera",
+    "name": "Rankoth Vehera",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Rankoth Vehera is a stupa located in the ancient city of Polonnaruwa in Sri Lanka. The stupa was built by Nissanka Malla of Polonnaruwa, who ruled the"
+      }
+    ]
+  },
+  {
+    "id": "nuwara_wewa",
+    "name": "Nuwara Wewa",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Bathalagoda Wewa Debara Wewa Erupothana Wewa Giritale Wewa Iratperiyakulama Wewa Kala Wewa Kande Ela Reservoir Kandy Lake (Nuwara Weva) Kantale Wewa Kaudulla"
+      }
+    ]
+  },
+  {
+    "id": "kurunegala_lake",
+    "name": "Kurunegala Lake",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "flood",
+        "severity": "high",
+        "description": "five remained missing. Heavy rains from the cyclone's outer bands caused significant flooding in Sri Lanka. As much as 146.3\u00a0mm (5.76\u00a0in) of precipitation"
+      }
+    ]
+  },
+  {
+    "id": "abhayagiri",
+    "name": "Abhayagiri",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "in Sri Lanka the Buddha visited during the three trips that many Buddhists believe he made to the country. The sacred places are known as Jaya Sri Maha"
+      }
+    ]
+  },
+  {
+    "id": "lankatilaka",
+    "name": "Lankatilaka",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "romanised:\u00a0Ka\u1e47\u1e6di [\u02c8ka\u0273\u0256i] ) is a major city located in the Central Province of Sri Lanka. It was the last capital of the Sinhalese monarchy from 1469 to 1818,"
+      }
+    ]
+  },
+  {
+    "id": "bambarakanda_falls",
+    "name": "Bambarakanda Falls",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Bambarakanda Falls (also known as Bambarakele Falls) is the tallest waterfall in Sri Lanka. With a height of 263\u00a0m (863\u00a0ft), it ranks as the 461st highest"
+      }
+    ]
+  },
+  {
+    "id": "somawathiya",
+    "name": "Somawathiya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "flood",
+        "severity": "high",
+        "description": "located in the park. Somawathiya and Flood plains national parks are important protected areas for the wetland system of Mahaweli River flood plains. The high"
+      }
+    ]
+  },
+  {
+    "id": "little_adams_peak",
+    "name": "Little Adams Peak",
+    "disasters": [
+      {
+        "year": 2004,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "(Yolanda) operation. When the Indian Ocean tsunami struck on 26 December 2004, McKerrow worked in India, Sri Lanka, Maldives and Indonesia, coordinating Red"
+      }
+    ]
+  },
+  {
+    "id": "bogoda_wooden_bridge",
+    "name": "Bogoda Wooden Bridge",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The Bogoda Wooden Bridge was built in the 16th century during the Dambadeniya era. This is said to be the oldest surviving wooden bridge in Sri Lanka.[citation"
+      }
+    ]
+  },
+  {
+    "id": "parakrama_samudra",
+    "name": "Parakrama Samudra",
+    "disasters": [
+      {
+        "year": 1957,
+        "type": "flood",
+        "severity": "high",
+        "description": " Sri Lanka. The reservoir is used to store water brings from Kala Wewa through Yodha Ela channel. The reservoir was severely damaged in 1957 flood and"
+      }
+    ]
+  },
+  {
+    "id": "ruwanwelisaya",
+    "name": "Ruwanwelisaya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Sri Maha Bodhi before commencing any important work. The Ruwanwelisaya is a stupa in Sri Lanka, considered a marvel for its architectural qualities and"
+      }
+    ]
+  },
+  {
+    "id": "buduruwagala",
+    "name": "Buduruwagala",
+    "disasters": [
+      {
+        "year": 2005,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "Galle \"Preliminary Survey of Tsunami-affected Monuments and Sites in the Maritime Region of Sri Lanka\" (PDF). ICOMOS Sri Lanka. March 2005. Retrieved 1 July"
+      }
+    ]
+  },
+  {
+    "id": "gal_vihara",
+    "name": "Gal Vihara",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "This is a timeline of Sri Lankan history, comprising important territorial changes and political & economic events in Sri Lanka and its predecessor states"
+      }
+    ]
+  },
+  {
+    "id": "nine_arches_bridge",
+    "name": "Nine Arches Bridge",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "tsunami",
+        "severity": "high",
+        "description": "including inland lakes, where they can be caused by landslides and glacier calving. Very small tsunamis, non-destructive and undetectable without specialized"
+      }
+    ]
+  },
+  {
+    "id": "puttalam_lagoon",
+    "name": "Puttalam Lagoon",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "cyclone",
+        "severity": "high",
+        "description": "Cyclonic Storm Ditwah was a weak but catastrophic tropical cyclone that brought heavy rain to Sri Lanka and Southern India in late November and early"
+      }
+    ]
+  },
+  {
+    "id": "jetavanaramaya",
+    "name": "Jetavanaramaya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Mahavihara adherents. The importance of the Jetavanaramaya's location is that Mahinda, who brought Buddhism to Sri Lanka, took up residence here to preach Dharma"
+      }
+    ]
+  },
+  {
+    "id": "maligawila",
+    "name": "Maligawila",
+    "disasters": [
+      {
+        "year": 2005,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "Galle \"Preliminary Survey of Tsunami-affected Monuments and Sites in the Maritime Region of Sri Lanka\" (PDF). ICOMOS Sri Lanka. March 2005. Retrieved 1 July"
+      }
+    ]
+  },
+  {
+    "id": "nissanka_latha_mandapaya",
+    "name": "Nissanka Latha Mandapaya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Nissanka Latha Mandapaya (Sinhala: \u0db1\u0dd2\u0dc1\u0dca\u0dc1\u0d82\u0d9a \u0dbd\u0dad\u0dcf \u0db8\u0dab\u0dca\u0da9\u0db4\u0dba) is a unique structure in the ancient city of Polonnaruwa in Sri Lanka. A m\u00e0ndapa is a pillared structure"
+      }
+    ]
+  },
+  {
+    "id": "vatadage",
+    "name": "Vatadage",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "A va\u1e6dad\u0101ge (Sinhala: \u0dc0\u0da7\u0daf\u0dcf\u0d9c\u0dd9) is a type of Buddhist structure found in Sri Lanka. It also known as a dage, thupagara and a cetiyagara. Although it may"
+      }
+    ]
+  },
+  {
+    "id": "diyaluma_falls",
+    "name": "Diyaluma Falls",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "landslide",
+        "severity": "high",
+        "description": "its natural environment, as well as for landslides. Diyaluma Falls Koslanda Bambarakanda Falls Koslanda Falls Thangamale Sanctuary A4 Highway,"
+      }
+    ]
+  },
+  {
+    "id": "lotus_pond",
+    "name": "Lotus Pond",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "flood",
+        "severity": "high",
+        "description": "islands within the Ganges Delta. Flood and landslide warnings were issued by the Disaster Management Centre of Sri Lanka on 19\u00a0May. Boats, helicopters,"
+      }
+    ]
+  },
+  {
+    "id": "ella_rock",
+    "name": "Ella Rock",
+    "disasters": [
+      {
+        "year": 2025,
+        "type": "cyclone",
+        "severity": "high",
+        "description": "Kuruwita, Rathindra (3 December 2025). \"As Cyclone Ditwah Recedes, Sri Lanka Confronts the Failures That Made a Disaster Inevitable\". The Diplomat. Retrieved"
+      }
+    ]
+  },
+  {
+    "id": "dunhinda_falls",
+    "name": "Dunhinda Falls",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Dunhinda Falls is a waterfall located about 5 kilometres (3.1\u00a0mi) from Badulla in the lower central hills of Sri Lanka. The waterfall, which is 64 metres"
+      }
+    ]
+  },
+  {
+    "id": "panadura_beach",
+    "name": "Panadura Beach",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "tsunami",
+        "severity": "high",
+        "description": "clothing and bedding for tsunami devastated countries, including Sri Lanka. Some Latter-day Saints in Virginia traveled to Sri Lanka at their own expense"
+      }
+    ]
+  },
+  {
+    "id": "muthiyangana",
+    "name": "Muthiyangana",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Muthiyangana Raja Maha Vihara is an ancient Buddhist temple located in the middle of Badulla town in the Badulla District of Uva Province in Sri Lanka"
+      }
+    ]
+  },
+  {
+    "id": "gem_museum_ratnapura",
+    "name": "Gem Museum Ratnapura",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "in Sri Lanka. It is the capital city of Sabaragamuwa Province, as well as the Ratnapura District, and is a traditional centre for the Sri Lankan gem trade"
+      }
+    ]
+  },
+  {
+    "id": "makandawa_forest_reserve",
+    "name": "Makandawa Forest Reserve",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "The Sri Lanka lowland rain forests represents Sri Lanka's Tropical rainforests below 1,000\u00a0m (3,281\u00a0ft) in elevation in the southwestern part of the island"
+      }
+    ]
+  },
+  {
+    "id": "maha_saman_devalaya",
+    "name": "Maha Saman Devalaya",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Saman (also called Sumana, Sumana Saman, Sinhala: \u0dc3\u0dd4\u0db8\u0db1 \u0dc3\u0db8\u0db1\u0dca \u0daf\u0dd9\u0dc0\u0dd2) is a deity, subject to local and indigenous belief and worship in Sri Lanka. The name"
+      }
+    ]
+  },
+  {
+    "id": "adams_peak",
+    "name": "Adams Peak",
+    "disasters": [
+      {
+        "year": 2005,
+        "type": "tsunami",
+        "severity": "high",
+        "description": "(2005-03-27). \"Tsunami: Anatomy of a disaster\". BBC. Kenneally, Christine (2004-12-30). \"Surviving the Tsunami: What Sri Lanka's animals knew that humans didn't\""
+      }
+    ]
+  },
+  {
+    "id": "asupini_ella",
+    "name": "Asupini Ella",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Province of Sri Lanka. Pinnawala is notable for having the largest herd of captive elephants in the world. Asupini Ella (waterfall) also called 'Asupini Falls'"
+      }
+    ]
+  },
+  {
+    "id": "alankuda_beach",
+    "name": "Alankuda Beach",
+    "disasters": [
+      {
+        "year": 2016,
+        "type": "disaster",
+        "severity": "high",
+        "description": "Sri Lanka\". www.lanka.com. Retrieved 8 December 2016. \"Kalpitiya Beach, Sri Lanka\". www.dunetowers.com. Retrieved 14 June 2023. \"Alankuda Beach, Sri Lanka\""
+      }
+    ]
+  },
+  {
+    "id": "weheragala_dam",
+    "name": "Weheragala Dam",
+    "disasters": [
+      {
+        "year": 2012,
+        "type": "disaster",
+        "severity": "high",
+        "description": "This is a list of Archaeological Protected Monuments in Ampara District, Sri Lanka. \"Protercted Monument List 2012-12-12 (In Sinhala)\" (PDF). Department"
+      }
+    ]
+  },
+  {
+    "id": "bopath_ella",
+    "name": "Bopath Ella",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Bopath Ella (Sinhala: \u0db6\u0ddd\u0db4\u0dad\u0dca \u0d87\u0dbd\u0dca\u0dbd) is a waterfall situated in the Ratnapura District of Sri Lanka. It has a shape very similar to the leaf of the Sacred"
+      }
+    ]
+  },
+  {
+    "id": "saradiyel_village",
+    "name": "Saradiyel Village",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "\u0dc0\u0dd2\u0da2\u0dda\u0dbb\u0dad\u0dca\u0db1 \u0dc0\u0dbb\u0d9a\u0dcf\u0d9c\u0ddc\u0da9), popularly as Wijeratne Warakagoda, is an actor in Sri Lankan cinema, stage drama and television. Career spanning more than six decades"
+      }
+    ]
+  },
+  {
+    "id": "negombo_dutch_fort",
+    "name": "Negombo Dutch Fort",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "Galle Fort (Sinhala: \u0d9c\u0dcf\u0dbd\u0dd4 \u0d9a\u0ddc\u0da7\u0dd4\u0dc0 Galu Kotuwa; Tamil: \u0b95\u0bbe\u0bb2\u0bbf\u0b95\u0bcd \u0b95\u0bcb\u0b9f\u0bcd\u0b9f\u0bc8, romanized:\u00a0K\u0101lik K\u014d\u1e6d\u1e6dai), in the Bay of Galle on the southwest coast of Sri Lanka, was"
+      }
+    ]
+  },
+  {
+    "id": "maduru_oya_boundary",
+    "name": "Maduru Oya Boundary",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "disaster",
+        "severity": "high",
+        "description": "\u014cy\u0101 T\u0113ciya P\u016b\u1e45k\u0101) is a national park of Sri Lanka, established under the Mahaweli development project and also acts as a catchment of the Maduru Oya Reservoir"
+      }
+    ]
+  },
+  {
+    "id": "star_fort",
+    "name": "Star Fort",
+    "disasters": [
+      {
+        "year": 2010,
+        "type": "flood",
+        "severity": "high",
+        "description": "Climate Disasters: Table of Events \u2013 National Centers for Environmental Information (NCEI)\". ncdc.noaa.gov. An (August 31, 2010). \"Floods, landslides leave"
+      }
+    ]
+  },
+  {
+    "id": "elephant_freedom_project",
+    "name": "Elephant Freedom Project",
+    "disasters": [
+      {
+        "year": "Historical",
+        "type": "landslide",
+        "severity": "high",
+        "description": "first female president of Sri Lanka, defeating UNP candidate Srima Dissanayake in the largest landslide victory in Sri Lankan history, securing almost"
+      }
+    ]
+  }
+]

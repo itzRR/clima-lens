@@ -1,0 +1,1552 @@
+{
+  "Athurugiriya": {
+    "1": {
+      "avg_precip": 2.32,
+      "avg_temp": 26.26
+    },
+    "2": {
+      "avg_precip": 2.34,
+      "avg_temp": 27.0
+    },
+    "3": {
+      "avg_precip": 3.38,
+      "avg_temp": 27.54
+    },
+    "4": {
+      "avg_precip": 5.86,
+      "avg_temp": 27.42
+    },
+    "5": {
+      "avg_precip": 9.54,
+      "avg_temp": 27.06
+    },
+    "6": {
+      "avg_precip": 8.43,
+      "avg_temp": 26.69
+    },
+    "7": {
+      "avg_precip": 6.58,
+      "avg_temp": 26.48
+    },
+    "8": {
+      "avg_precip": 7.09,
+      "avg_temp": 26.23
+    },
+    "9": {
+      "avg_precip": 8.08,
+      "avg_temp": 26.13
+    },
+    "10": {
+      "avg_precip": 11.92,
+      "avg_temp": 26.03
+    },
+    "11": {
+      "avg_precip": 10.71,
+      "avg_temp": 25.79
+    },
+    "12": {
+      "avg_precip": 6.1,
+      "avg_temp": 25.66
+    }
+  },
+  "Badulla": {
+    "1": {
+      "avg_precip": 4.44,
+      "avg_temp": 21.26
+    },
+    "2": {
+      "avg_precip": 3.35,
+      "avg_temp": 21.84
+    },
+    "3": {
+      "avg_precip": 3.29,
+      "avg_temp": 23.15
+    },
+    "4": {
+      "avg_precip": 6.29,
+      "avg_temp": 24.21
+    },
+    "5": {
+      "avg_precip": 5.27,
+      "avg_temp": 24.97
+    },
+    "6": {
+      "avg_precip": 1.68,
+      "avg_temp": 25.39
+    },
+    "7": {
+      "avg_precip": 2.12,
+      "avg_temp": 25.49
+    },
+    "8": {
+      "avg_precip": 2.31,
+      "avg_temp": 25.22
+    },
+    "9": {
+      "avg_precip": 3.48,
+      "avg_temp": 24.69
+    },
+    "10": {
+      "avg_precip": 9.84,
+      "avg_temp": 23.68
+    },
+    "11": {
+      "avg_precip": 11.46,
+      "avg_temp": 22.36
+    },
+    "12": {
+      "avg_precip": 7.82,
+      "avg_temp": 21.67
+    }
+  },
+  "Bentota": {
+    "1": {
+      "avg_precip": 2.88,
+      "avg_temp": 26.05
+    },
+    "2": {
+      "avg_precip": 3.04,
+      "avg_temp": 26.55
+    },
+    "3": {
+      "avg_precip": 4.0,
+      "avg_temp": 27.17
+    },
+    "4": {
+      "avg_precip": 6.3,
+      "avg_temp": 27.27
+    },
+    "5": {
+      "avg_precip": 10.24,
+      "avg_temp": 27.09
+    },
+    "6": {
+      "avg_precip": 8.71,
+      "avg_temp": 26.74
+    },
+    "7": {
+      "avg_precip": 6.56,
+      "avg_temp": 26.5
+    },
+    "8": {
+      "avg_precip": 7.1,
+      "avg_temp": 26.25
+    },
+    "9": {
+      "avg_precip": 8.35,
+      "avg_temp": 26.19
+    },
+    "10": {
+      "avg_precip": 11.53,
+      "avg_temp": 26.11
+    },
+    "11": {
+      "avg_precip": 10.89,
+      "avg_temp": 25.93
+    },
+    "12": {
+      "avg_precip": 7.06,
+      "avg_temp": 25.83
+    }
+  },
+  "Colombo": {
+    "1": {
+      "avg_precip": 2.88,
+      "avg_temp": 26.37
+    },
+    "2": {
+      "avg_precip": 3.04,
+      "avg_temp": 27.18
+    },
+    "3": {
+      "avg_precip": 4.0,
+      "avg_temp": 27.75
+    },
+    "4": {
+      "avg_precip": 6.3,
+      "avg_temp": 27.59
+    },
+    "5": {
+      "avg_precip": 10.24,
+      "avg_temp": 27.24
+    },
+    "6": {
+      "avg_precip": 8.71,
+      "avg_temp": 26.87
+    },
+    "7": {
+      "avg_precip": 6.56,
+      "avg_temp": 26.66
+    },
+    "8": {
+      "avg_precip": 7.1,
+      "avg_temp": 26.41
+    },
+    "9": {
+      "avg_precip": 8.35,
+      "avg_temp": 26.31
+    },
+    "10": {
+      "avg_precip": 11.53,
+      "avg_temp": 26.22
+    },
+    "11": {
+      "avg_precip": 10.89,
+      "avg_temp": 25.99
+    },
+    "12": {
+      "avg_precip": 7.06,
+      "avg_temp": 25.84
+    }
+  },
+  "Galle": {
+    "1": {
+      "avg_precip": 3.31,
+      "avg_temp": 26.53
+    },
+    "2": {
+      "avg_precip": 3.12,
+      "avg_temp": 27.08
+    },
+    "3": {
+      "avg_precip": 3.35,
+      "avg_temp": 27.66
+    },
+    "4": {
+      "avg_precip": 5.71,
+      "avg_temp": 27.78
+    },
+    "5": {
+      "avg_precip": 8.0,
+      "avg_temp": 27.85
+    },
+    "6": {
+      "avg_precip": 5.49,
+      "avg_temp": 27.5
+    },
+    "7": {
+      "avg_precip": 4.33,
+      "avg_temp": 27.19
+    },
+    "8": {
+      "avg_precip": 4.98,
+      "avg_temp": 26.94
+    },
+    "9": {
+      "avg_precip": 6.45,
+      "avg_temp": 26.83
+    },
+    "10": {
+      "avg_precip": 7.99,
+      "avg_temp": 26.74
+    },
+    "11": {
+      "avg_precip": 9.41,
+      "avg_temp": 26.63
+    },
+    "12": {
+      "avg_precip": 6.68,
+      "avg_temp": 26.52
+    }
+  },
+  "Gampaha": {
+    "1": {
+      "avg_precip": 2.32,
+      "avg_temp": 26.29
+    },
+    "2": {
+      "avg_precip": 2.34,
+      "avg_temp": 27.3
+    },
+    "3": {
+      "avg_precip": 3.38,
+      "avg_temp": 27.93
+    },
+    "4": {
+      "avg_precip": 5.86,
+      "avg_temp": 27.56
+    },
+    "5": {
+      "avg_precip": 9.54,
+      "avg_temp": 27.07
+    },
+    "6": {
+      "avg_precip": 8.43,
+      "avg_temp": 26.63
+    },
+    "7": {
+      "avg_precip": 6.58,
+      "avg_temp": 26.44
+    },
+    "8": {
+      "avg_precip": 7.09,
+      "avg_temp": 26.19
+    },
+    "9": {
+      "avg_precip": 8.08,
+      "avg_temp": 26.1
+    },
+    "10": {
+      "avg_precip": 11.92,
+      "avg_temp": 26.0
+    },
+    "11": {
+      "avg_precip": 10.71,
+      "avg_temp": 25.83
+    },
+    "12": {
+      "avg_precip": 6.1,
+      "avg_temp": 25.72
+    }
+  },
+  "Hambantota": {
+    "1": {
+      "avg_precip": 2.15,
+      "avg_temp": 26.02
+    },
+    "2": {
+      "avg_precip": 1.88,
+      "avg_temp": 26.64
+    },
+    "3": {
+      "avg_precip": 1.96,
+      "avg_temp": 27.51
+    },
+    "4": {
+      "avg_precip": 3.55,
+      "avg_temp": 27.88
+    },
+    "5": {
+      "avg_precip": 3.36,
+      "avg_temp": 27.99
+    },
+    "6": {
+      "avg_precip": 0.96,
+      "avg_temp": 28.13
+    },
+    "7": {
+      "avg_precip": 0.68,
+      "avg_temp": 28.18
+    },
+    "8": {
+      "avg_precip": 1.03,
+      "avg_temp": 27.89
+    },
+    "9": {
+      "avg_precip": 2.03,
+      "avg_temp": 27.62
+    },
+    "10": {
+      "avg_precip": 5.06,
+      "avg_temp": 27.23
+    },
+    "11": {
+      "avg_precip": 6.96,
+      "avg_temp": 26.35
+    },
+    "12": {
+      "avg_precip": 5.71,
+      "avg_temp": 25.93
+    }
+  },
+  "Hatton": {
+    "1": {
+      "avg_precip": 4.6,
+      "avg_temp": 19.87
+    },
+    "2": {
+      "avg_precip": 4.23,
+      "avg_temp": 20.33
+    },
+    "3": {
+      "avg_precip": 3.71,
+      "avg_temp": 20.97
+    },
+    "4": {
+      "avg_precip": 7.97,
+      "avg_temp": 21.21
+    },
+    "5": {
+      "avg_precip": 8.19,
+      "avg_temp": 21.13
+    },
+    "6": {
+      "avg_precip": 4.72,
+      "avg_temp": 20.52
+    },
+    "7": {
+      "avg_precip": 5.69,
+      "avg_temp": 20.23
+    },
+    "8": {
+      "avg_precip": 6.3,
+      "avg_temp": 20.0
+    },
+    "9": {
+      "avg_precip": 7.65,
+      "avg_temp": 20.04
+    },
+    "10": {
+      "avg_precip": 13.23,
+      "avg_temp": 20.07
+    },
+    "11": {
+      "avg_precip": 11.71,
+      "avg_temp": 20.07
+    },
+    "12": {
+      "avg_precip": 8.23,
+      "avg_temp": 19.9
+    }
+  },
+  "Jaffna": {
+    "1": {
+      "avg_precip": 2.78,
+      "avg_temp": 25.67
+    },
+    "2": {
+      "avg_precip": 1.24,
+      "avg_temp": 26.3
+    },
+    "3": {
+      "avg_precip": 0.44,
+      "avg_temp": 27.99
+    },
+    "4": {
+      "avg_precip": 1.74,
+      "avg_temp": 29.33
+    },
+    "5": {
+      "avg_precip": 2.42,
+      "avg_temp": 29.39
+    },
+    "6": {
+      "avg_precip": 0.88,
+      "avg_temp": 29.21
+    },
+    "7": {
+      "avg_precip": 1.43,
+      "avg_temp": 28.86
+    },
+    "8": {
+      "avg_precip": 2.29,
+      "avg_temp": 28.42
+    },
+    "9": {
+      "avg_precip": 2.45,
+      "avg_temp": 28.19
+    },
+    "10": {
+      "avg_precip": 7.56,
+      "avg_temp": 27.53
+    },
+    "11": {
+      "avg_precip": 10.65,
+      "avg_temp": 26.48
+    },
+    "12": {
+      "avg_precip": 7.05,
+      "avg_temp": 25.89
+    }
+  },
+  "Kalmunai": {
+    "1": {
+      "avg_precip": 6.61,
+      "avg_temp": 25.6
+    },
+    "2": {
+      "avg_precip": 4.28,
+      "avg_temp": 26.08
+    },
+    "3": {
+      "avg_precip": 2.2,
+      "avg_temp": 27.2
+    },
+    "4": {
+      "avg_precip": 2.0,
+      "avg_temp": 28.35
+    },
+    "5": {
+      "avg_precip": 2.25,
+      "avg_temp": 29.09
+    },
+    "6": {
+      "avg_precip": 0.91,
+      "avg_temp": 29.7
+    },
+    "7": {
+      "avg_precip": 1.14,
+      "avg_temp": 29.51
+    },
+    "8": {
+      "avg_precip": 1.61,
+      "avg_temp": 29.08
+    },
+    "9": {
+      "avg_precip": 2.36,
+      "avg_temp": 28.58
+    },
+    "10": {
+      "avg_precip": 6.29,
+      "avg_temp": 27.56
+    },
+    "11": {
+      "avg_precip": 9.41,
+      "avg_temp": 26.3
+    },
+    "12": {
+      "avg_precip": 11.59,
+      "avg_temp": 25.75
+    }
+  },
+  "Kalutara": {
+    "1": {
+      "avg_precip": 2.88,
+      "avg_temp": 26.16
+    },
+    "2": {
+      "avg_precip": 3.04,
+      "avg_temp": 26.69
+    },
+    "3": {
+      "avg_precip": 4.0,
+      "avg_temp": 27.28
+    },
+    "4": {
+      "avg_precip": 6.3,
+      "avg_temp": 27.32
+    },
+    "5": {
+      "avg_precip": 10.24,
+      "avg_temp": 27.09
+    },
+    "6": {
+      "avg_precip": 8.71,
+      "avg_temp": 26.74
+    },
+    "7": {
+      "avg_precip": 6.56,
+      "avg_temp": 26.51
+    },
+    "8": {
+      "avg_precip": 7.1,
+      "avg_temp": 26.25
+    },
+    "9": {
+      "avg_precip": 8.35,
+      "avg_temp": 26.19
+    },
+    "10": {
+      "avg_precip": 11.53,
+      "avg_temp": 26.11
+    },
+    "11": {
+      "avg_precip": 10.89,
+      "avg_temp": 25.94
+    },
+    "12": {
+      "avg_precip": 7.06,
+      "avg_temp": 25.85
+    }
+  },
+  "Kandy": {
+    "1": {
+      "avg_precip": 3.78,
+      "avg_temp": 22.18
+    },
+    "2": {
+      "avg_precip": 3.15,
+      "avg_temp": 23.01
+    },
+    "3": {
+      "avg_precip": 3.31,
+      "avg_temp": 24.55
+    },
+    "4": {
+      "avg_precip": 7.91,
+      "avg_temp": 24.86
+    },
+    "5": {
+      "avg_precip": 6.74,
+      "avg_temp": 24.38
+    },
+    "6": {
+      "avg_precip": 3.74,
+      "avg_temp": 23.93
+    },
+    "7": {
+      "avg_precip": 4.31,
+      "avg_temp": 23.67
+    },
+    "8": {
+      "avg_precip": 4.65,
+      "avg_temp": 23.41
+    },
+    "9": {
+      "avg_precip": 4.74,
+      "avg_temp": 23.46
+    },
+    "10": {
+      "avg_precip": 13.47,
+      "avg_temp": 23.27
+    },
+    "11": {
+      "avg_precip": 12.86,
+      "avg_temp": 22.84
+    },
+    "12": {
+      "avg_precip": 7.54,
+      "avg_temp": 22.36
+    }
+  },
+  "Kesbewa": {
+    "1": {
+      "avg_precip": 2.88,
+      "avg_temp": 26.32
+    },
+    "2": {
+      "avg_precip": 3.04,
+      "avg_temp": 26.95
+    },
+    "3": {
+      "avg_precip": 4.0,
+      "avg_temp": 27.5
+    },
+    "4": {
+      "avg_precip": 6.3,
+      "avg_temp": 27.44
+    },
+    "5": {
+      "avg_precip": 10.24,
+      "avg_temp": 27.13
+    },
+    "6": {
+      "avg_precip": 8.71,
+      "avg_temp": 26.77
+    },
+    "7": {
+      "avg_precip": 6.56,
+      "avg_temp": 26.55
+    },
+    "8": {
+      "avg_precip": 7.1,
+      "avg_temp": 26.3
+    },
+    "9": {
+      "avg_precip": 8.35,
+      "avg_temp": 26.21
+    },
+    "10": {
+      "avg_precip": 11.53,
+      "avg_temp": 26.13
+    },
+    "11": {
+      "avg_precip": 10.89,
+      "avg_temp": 25.92
+    },
+    "12": {
+      "avg_precip": 7.06,
+      "avg_temp": 25.81
+    }
+  },
+  "Kolonnawa": {
+    "1": {
+      "avg_precip": 2.32,
+      "avg_temp": 26.36
+    },
+    "2": {
+      "avg_precip": 2.34,
+      "avg_temp": 27.1
+    },
+    "3": {
+      "avg_precip": 3.38,
+      "avg_temp": 27.64
+    },
+    "4": {
+      "avg_precip": 5.86,
+      "avg_temp": 27.52
+    },
+    "5": {
+      "avg_precip": 9.54,
+      "avg_temp": 27.16
+    },
+    "6": {
+      "avg_precip": 8.43,
+      "avg_temp": 26.79
+    },
+    "7": {
+      "avg_precip": 6.58,
+      "avg_temp": 26.58
+    },
+    "8": {
+      "avg_precip": 7.09,
+      "avg_temp": 26.33
+    },
+    "9": {
+      "avg_precip": 8.08,
+      "avg_temp": 26.23
+    },
+    "10": {
+      "avg_precip": 11.92,
+      "avg_temp": 26.13
+    },
+    "11": {
+      "avg_precip": 10.71,
+      "avg_temp": 25.89
+    },
+    "12": {
+      "avg_precip": 6.1,
+      "avg_temp": 25.76
+    }
+  },
+  "Kurunegala": {
+    "1": {
+      "avg_precip": 2.43,
+      "avg_temp": 24.94
+    },
+    "2": {
+      "avg_precip": 1.73,
+      "avg_temp": 26.03
+    },
+    "3": {
+      "avg_precip": 1.87,
+      "avg_temp": 27.52
+    },
+    "4": {
+      "avg_precip": 5.52,
+      "avg_temp": 27.06
+    },
+    "5": {
+      "avg_precip": 6.95,
+      "avg_temp": 26.38
+    },
+    "6": {
+      "avg_precip": 5.08,
+      "avg_temp": 25.81
+    },
+    "7": {
+      "avg_precip": 4.22,
+      "avg_temp": 25.66
+    },
+    "8": {
+      "avg_precip": 4.87,
+      "avg_temp": 25.41
+    },
+    "9": {
+      "avg_precip": 5.41,
+      "avg_temp": 25.4
+    },
+    "10": {
+      "avg_precip": 11.4,
+      "avg_temp": 25.19
+    },
+    "11": {
+      "avg_precip": 9.61,
+      "avg_temp": 24.93
+    },
+    "12": {
+      "avg_precip": 5.54,
+      "avg_temp": 24.73
+    }
+  },
+  "Mabole": {
+    "1": {
+      "avg_precip": 2.32,
+      "avg_temp": 26.37
+    },
+    "2": {
+      "avg_precip": 2.34,
+      "avg_temp": 27.18
+    },
+    "3": {
+      "avg_precip": 3.38,
+      "avg_temp": 27.75
+    },
+    "4": {
+      "avg_precip": 5.86,
+      "avg_temp": 27.59
+    },
+    "5": {
+      "avg_precip": 9.54,
+      "avg_temp": 27.24
+    },
+    "6": {
+      "avg_precip": 8.43,
+      "avg_temp": 26.87
+    },
+    "7": {
+      "avg_precip": 6.58,
+      "avg_temp": 26.66
+    },
+    "8": {
+      "avg_precip": 7.09,
+      "avg_temp": 26.41
+    },
+    "9": {
+      "avg_precip": 8.08,
+      "avg_temp": 26.31
+    },
+    "10": {
+      "avg_precip": 11.92,
+      "avg_temp": 26.22
+    },
+    "11": {
+      "avg_precip": 10.71,
+      "avg_temp": 25.99
+    },
+    "12": {
+      "avg_precip": 6.1,
+      "avg_temp": 25.84
+    }
+  },
+  "Maharagama": {
+    "1": {
+      "avg_precip": 2.88,
+      "avg_temp": 26.27
+    },
+    "2": {
+      "avg_precip": 3.04,
+      "avg_temp": 26.9
+    },
+    "3": {
+      "avg_precip": 4.0,
+      "avg_temp": 27.45
+    },
+    "4": {
+      "avg_precip": 6.3,
+      "avg_temp": 27.39
+    },
+    "5": {
+      "avg_precip": 10.24,
+      "avg_temp": 27.08
+    },
+    "6": {
+      "avg_precip": 8.71,
+      "avg_temp": 26.72
+    },
+    "7": {
+      "avg_precip": 6.56,
+      "avg_temp": 26.5
+    },
+    "8": {
+      "avg_precip": 7.1,
+      "avg_temp": 26.25
+    },
+    "9": {
+      "avg_precip": 8.35,
+      "avg_temp": 26.17
+    },
+    "10": {
+      "avg_precip": 11.53,
+      "avg_temp": 26.08
+    },
+    "11": {
+      "avg_precip": 10.89,
+      "avg_temp": 25.87
+    },
+    "12": {
+      "avg_precip": 7.06,
+      "avg_temp": 25.76
+    }
+  },
+  "Mannar": {
+    "1": {
+      "avg_precip": 2.99,
+      "avg_temp": 25.47
+    },
+    "2": {
+      "avg_precip": 1.47,
+      "avg_temp": 26.26
+    },
+    "3": {
+      "avg_precip": 0.83,
+      "avg_temp": 28.02
+    },
+    "4": {
+      "avg_precip": 2.92,
+      "avg_temp": 28.9
+    },
+    "5": {
+      "avg_precip": 2.84,
+      "avg_temp": 28.84
+    },
+    "6": {
+      "avg_precip": 0.78,
+      "avg_temp": 28.67
+    },
+    "7": {
+      "avg_precip": 1.05,
+      "avg_temp": 28.34
+    },
+    "8": {
+      "avg_precip": 1.48,
+      "avg_temp": 27.97
+    },
+    "9": {
+      "avg_precip": 2.22,
+      "avg_temp": 27.81
+    },
+    "10": {
+      "avg_precip": 7.03,
+      "avg_temp": 27.2
+    },
+    "11": {
+      "avg_precip": 8.11,
+      "avg_temp": 26.24
+    },
+    "12": {
+      "avg_precip": 5.25,
+      "avg_temp": 25.7
+    }
+  },
+  "Matale": {
+    "1": {
+      "avg_precip": 3.61,
+      "avg_temp": 23.39
+    },
+    "2": {
+      "avg_precip": 2.62,
+      "avg_temp": 24.21
+    },
+    "3": {
+      "avg_precip": 2.19,
+      "avg_temp": 25.9
+    },
+    "4": {
+      "avg_precip": 6.21,
+      "avg_temp": 26.39
+    },
+    "5": {
+      "avg_precip": 5.54,
+      "avg_temp": 26.04
+    },
+    "6": {
+      "avg_precip": 2.92,
+      "avg_temp": 25.72
+    },
+    "7": {
+      "avg_precip": 3.32,
+      "avg_temp": 25.57
+    },
+    "8": {
+      "avg_precip": 3.62,
+      "avg_temp": 25.34
+    },
+    "9": {
+      "avg_precip": 3.88,
+      "avg_temp": 25.31
+    },
+    "10": {
+      "avg_precip": 12.01,
+      "avg_temp": 24.82
+    },
+    "11": {
+      "avg_precip": 11.19,
+      "avg_temp": 24.05
+    },
+    "12": {
+      "avg_precip": 7.1,
+      "avg_temp": 23.56
+    }
+  },
+  "Matara": {
+    "1": {
+      "avg_precip": 3.31,
+      "avg_temp": 25.96
+    },
+    "2": {
+      "avg_precip": 3.12,
+      "avg_temp": 26.53
+    },
+    "3": {
+      "avg_precip": 3.35,
+      "avg_temp": 27.2
+    },
+    "4": {
+      "avg_precip": 5.71,
+      "avg_temp": 27.3
+    },
+    "5": {
+      "avg_precip": 8.0,
+      "avg_temp": 27.07
+    },
+    "6": {
+      "avg_precip": 5.49,
+      "avg_temp": 26.73
+    },
+    "7": {
+      "avg_precip": 4.33,
+      "avg_temp": 26.52
+    },
+    "8": {
+      "avg_precip": 4.98,
+      "avg_temp": 26.25
+    },
+    "9": {
+      "avg_precip": 6.45,
+      "avg_temp": 26.17
+    },
+    "10": {
+      "avg_precip": 7.99,
+      "avg_temp": 26.16
+    },
+    "11": {
+      "avg_precip": 9.41,
+      "avg_temp": 26.03
+    },
+    "12": {
+      "avg_precip": 6.68,
+      "avg_temp": 25.91
+    }
+  },
+  "Moratuwa": {
+    "1": {
+      "avg_precip": 2.88,
+      "avg_temp": 26.37
+    },
+    "2": {
+      "avg_precip": 3.04,
+      "avg_temp": 27.0
+    },
+    "3": {
+      "avg_precip": 4.0,
+      "avg_temp": 27.55
+    },
+    "4": {
+      "avg_precip": 6.3,
+      "avg_temp": 27.49
+    },
+    "5": {
+      "avg_precip": 10.24,
+      "avg_temp": 27.18
+    },
+    "6": {
+      "avg_precip": 8.71,
+      "avg_temp": 26.82
+    },
+    "7": {
+      "avg_precip": 6.56,
+      "avg_temp": 26.6
+    },
+    "8": {
+      "avg_precip": 7.1,
+      "avg_temp": 26.35
+    },
+    "9": {
+      "avg_precip": 8.35,
+      "avg_temp": 26.27
+    },
+    "10": {
+      "avg_precip": 11.53,
+      "avg_temp": 26.18
+    },
+    "11": {
+      "avg_precip": 10.89,
+      "avg_temp": 25.97
+    },
+    "12": {
+      "avg_precip": 7.06,
+      "avg_temp": 25.86
+    }
+  },
+  "Mount Lavinia": {
+    "1": {
+      "avg_precip": 2.88,
+      "avg_temp": 26.41
+    },
+    "2": {
+      "avg_precip": 3.04,
+      "avg_temp": 27.15
+    },
+    "3": {
+      "avg_precip": 4.0,
+      "avg_temp": 27.69
+    },
+    "4": {
+      "avg_precip": 6.3,
+      "avg_temp": 27.57
+    },
+    "5": {
+      "avg_precip": 10.24,
+      "avg_temp": 27.21
+    },
+    "6": {
+      "avg_precip": 8.71,
+      "avg_temp": 26.85
+    },
+    "7": {
+      "avg_precip": 6.56,
+      "avg_temp": 26.63
+    },
+    "8": {
+      "avg_precip": 7.1,
+      "avg_temp": 26.38
+    },
+    "9": {
+      "avg_precip": 8.35,
+      "avg_temp": 26.27
+    },
+    "10": {
+      "avg_precip": 11.53,
+      "avg_temp": 26.18
+    },
+    "11": {
+      "avg_precip": 10.89,
+      "avg_temp": 25.94
+    },
+    "12": {
+      "avg_precip": 7.06,
+      "avg_temp": 25.81
+    }
+  },
+  "Negombo": {
+    "1": {
+      "avg_precip": 2.32,
+      "avg_temp": 26.4
+    },
+    "2": {
+      "avg_precip": 2.34,
+      "avg_temp": 27.33
+    },
+    "3": {
+      "avg_precip": 3.38,
+      "avg_temp": 27.93
+    },
+    "4": {
+      "avg_precip": 5.86,
+      "avg_temp": 27.74
+    },
+    "5": {
+      "avg_precip": 9.54,
+      "avg_temp": 27.36
+    },
+    "6": {
+      "avg_precip": 8.43,
+      "avg_temp": 26.99
+    },
+    "7": {
+      "avg_precip": 6.58,
+      "avg_temp": 26.8
+    },
+    "8": {
+      "avg_precip": 7.09,
+      "avg_temp": 26.53
+    },
+    "9": {
+      "avg_precip": 8.08,
+      "avg_temp": 26.43
+    },
+    "10": {
+      "avg_precip": 11.92,
+      "avg_temp": 26.35
+    },
+    "11": {
+      "avg_precip": 10.71,
+      "avg_temp": 26.12
+    },
+    "12": {
+      "avg_precip": 6.1,
+      "avg_temp": 25.96
+    }
+  },
+  "Oruwala": {
+    "1": {
+      "avg_precip": 2.32,
+      "avg_temp": 26.19
+    },
+    "2": {
+      "avg_precip": 2.34,
+      "avg_temp": 26.93
+    },
+    "3": {
+      "avg_precip": 3.38,
+      "avg_temp": 27.43
+    },
+    "4": {
+      "avg_precip": 5.86,
+      "avg_temp": 27.26
+    },
+    "5": {
+      "avg_precip": 9.54,
+      "avg_temp": 26.86
+    },
+    "6": {
+      "avg_precip": 8.43,
+      "avg_temp": 26.45
+    },
+    "7": {
+      "avg_precip": 6.58,
+      "avg_temp": 26.25
+    },
+    "8": {
+      "avg_precip": 7.09,
+      "avg_temp": 26.01
+    },
+    "9": {
+      "avg_precip": 8.08,
+      "avg_temp": 25.93
+    },
+    "10": {
+      "avg_precip": 11.92,
+      "avg_temp": 25.86
+    },
+    "11": {
+      "avg_precip": 10.71,
+      "avg_temp": 25.69
+    },
+    "12": {
+      "avg_precip": 6.1,
+      "avg_temp": 25.59
+    }
+  },
+  "Pothuhera": {
+    "1": {
+      "avg_precip": 2.43,
+      "avg_temp": 24.86
+    },
+    "2": {
+      "avg_precip": 1.73,
+      "avg_temp": 26.04
+    },
+    "3": {
+      "avg_precip": 1.87,
+      "avg_temp": 27.33
+    },
+    "4": {
+      "avg_precip": 5.52,
+      "avg_temp": 26.75
+    },
+    "5": {
+      "avg_precip": 6.95,
+      "avg_temp": 26.06
+    },
+    "6": {
+      "avg_precip": 5.08,
+      "avg_temp": 25.45
+    },
+    "7": {
+      "avg_precip": 4.22,
+      "avg_temp": 25.31
+    },
+    "8": {
+      "avg_precip": 4.87,
+      "avg_temp": 25.05
+    },
+    "9": {
+      "avg_precip": 5.41,
+      "avg_temp": 25.02
+    },
+    "10": {
+      "avg_precip": 11.4,
+      "avg_temp": 24.86
+    },
+    "11": {
+      "avg_precip": 9.61,
+      "avg_temp": 24.68
+    },
+    "12": {
+      "avg_precip": 5.54,
+      "avg_temp": 24.51
+    }
+  },
+  "Puttalam": {
+    "1": {
+      "avg_precip": 1.85,
+      "avg_temp": 25.78
+    },
+    "2": {
+      "avg_precip": 1.59,
+      "avg_temp": 26.67
+    },
+    "3": {
+      "avg_precip": 1.76,
+      "avg_temp": 28.08
+    },
+    "4": {
+      "avg_precip": 4.68,
+      "avg_temp": 28.2
+    },
+    "5": {
+      "avg_precip": 5.96,
+      "avg_temp": 28.02
+    },
+    "6": {
+      "avg_precip": 3.84,
+      "avg_temp": 27.61
+    },
+    "7": {
+      "avg_precip": 2.68,
+      "avg_temp": 27.4
+    },
+    "8": {
+      "avg_precip": 3.37,
+      "avg_temp": 27.11
+    },
+    "9": {
+      "avg_precip": 4.49,
+      "avg_temp": 27.02
+    },
+    "10": {
+      "avg_precip": 9.25,
+      "avg_temp": 26.74
+    },
+    "11": {
+      "avg_precip": 8.34,
+      "avg_temp": 26.19
+    },
+    "12": {
+      "avg_precip": 4.93,
+      "avg_temp": 25.86
+    }
+  },
+  "Ratnapura": {
+    "1": {
+      "avg_precip": 4.21,
+      "avg_temp": 24.89
+    },
+    "2": {
+      "avg_precip": 4.03,
+      "avg_temp": 25.47
+    },
+    "3": {
+      "avg_precip": 4.54,
+      "avg_temp": 25.95
+    },
+    "4": {
+      "avg_precip": 7.46,
+      "avg_temp": 25.96
+    },
+    "5": {
+      "avg_precip": 10.27,
+      "avg_temp": 25.68
+    },
+    "6": {
+      "avg_precip": 8.25,
+      "avg_temp": 25.18
+    },
+    "7": {
+      "avg_precip": 6.79,
+      "avg_temp": 24.95
+    },
+    "8": {
+      "avg_precip": 7.65,
+      "avg_temp": 24.71
+    },
+    "9": {
+      "avg_precip": 8.8,
+      "avg_temp": 24.72
+    },
+    "10": {
+      "avg_precip": 11.77,
+      "avg_temp": 24.76
+    },
+    "11": {
+      "avg_precip": 12.22,
+      "avg_temp": 24.73
+    },
+    "12": {
+      "avg_precip": 7.78,
+      "avg_temp": 24.64
+    }
+  },
+  "Sri Jayewardenepura Kotte": {
+    "1": {
+      "avg_precip": 2.32,
+      "avg_temp": 26.41
+    },
+    "2": {
+      "avg_precip": 2.34,
+      "avg_temp": 27.15
+    },
+    "3": {
+      "avg_precip": 3.38,
+      "avg_temp": 27.69
+    },
+    "4": {
+      "avg_precip": 5.86,
+      "avg_temp": 27.57
+    },
+    "5": {
+      "avg_precip": 9.54,
+      "avg_temp": 27.21
+    },
+    "6": {
+      "avg_precip": 8.43,
+      "avg_temp": 26.85
+    },
+    "7": {
+      "avg_precip": 6.58,
+      "avg_temp": 26.63
+    },
+    "8": {
+      "avg_precip": 7.09,
+      "avg_temp": 26.38
+    },
+    "9": {
+      "avg_precip": 8.08,
+      "avg_temp": 26.27
+    },
+    "10": {
+      "avg_precip": 11.92,
+      "avg_temp": 26.18
+    },
+    "11": {
+      "avg_precip": 10.71,
+      "avg_temp": 25.94
+    },
+    "12": {
+      "avg_precip": 6.1,
+      "avg_temp": 25.81
+    }
+  },
+  "Trincomalee": {
+    "1": {
+      "avg_precip": 5.1,
+      "avg_temp": 25.49
+    },
+    "2": {
+      "avg_precip": 3.42,
+      "avg_temp": 26.03
+    },
+    "3": {
+      "avg_precip": 1.35,
+      "avg_temp": 27.4
+    },
+    "4": {
+      "avg_precip": 1.79,
+      "avg_temp": 28.68
+    },
+    "5": {
+      "avg_precip": 2.15,
+      "avg_temp": 29.19
+    },
+    "6": {
+      "avg_precip": 0.45,
+      "avg_temp": 29.53
+    },
+    "7": {
+      "avg_precip": 1.19,
+      "avg_temp": 29.1
+    },
+    "8": {
+      "avg_precip": 1.57,
+      "avg_temp": 28.73
+    },
+    "9": {
+      "avg_precip": 2.08,
+      "avg_temp": 28.5
+    },
+    "10": {
+      "avg_precip": 7.26,
+      "avg_temp": 27.42
+    },
+    "11": {
+      "avg_precip": 10.51,
+      "avg_temp": 26.16
+    },
+    "12": {
+      "avg_precip": 9.78,
+      "avg_temp": 25.68
+    }
+  },
+  "Weligama": {
+    "1": {
+      "avg_precip": 3.31,
+      "avg_temp": 26.01
+    },
+    "2": {
+      "avg_precip": 3.12,
+      "avg_temp": 26.59
+    },
+    "3": {
+      "avg_precip": 3.35,
+      "avg_temp": 27.26
+    },
+    "4": {
+      "avg_precip": 5.71,
+      "avg_temp": 27.35
+    },
+    "5": {
+      "avg_precip": 8.0,
+      "avg_temp": 27.12
+    },
+    "6": {
+      "avg_precip": 5.49,
+      "avg_temp": 26.78
+    },
+    "7": {
+      "avg_precip": 4.33,
+      "avg_temp": 26.57
+    },
+    "8": {
+      "avg_precip": 4.98,
+      "avg_temp": 26.3
+    },
+    "9": {
+      "avg_precip": 6.45,
+      "avg_temp": 26.22
+    },
+    "10": {
+      "avg_precip": 7.99,
+      "avg_temp": 26.21
+    },
+    "11": {
+      "avg_precip": 9.41,
+      "avg_temp": 26.09
+    },
+    "12": {
+      "avg_precip": 6.68,
+      "avg_temp": 25.96
+    }
+  },
+  "_FALLBACK_": {
+    "1": {
+      "avg_precip": 3.11,
+      "avg_temp": 25.4
+    },
+    "2": {
+      "avg_precip": 2.73,
+      "avg_temp": 26.12
+    },
+    "3": {
+      "avg_precip": 3.04,
+      "avg_temp": 27.0
+    },
+    "4": {
+      "avg_precip": 5.53,
+      "avg_temp": 27.17
+    },
+    "5": {
+      "avg_precip": 7.71,
+      "avg_temp": 26.97
+    },
+    "6": {
+      "avg_precip": 5.86,
+      "avg_temp": 26.69
+    },
+    "7": {
+      "avg_precip": 4.79,
+      "avg_temp": 26.48
+    },
+    "8": {
+      "avg_precip": 5.33,
+      "avg_temp": 26.2
+    },
+    "9": {
+      "avg_precip": 6.31,
+      "avg_temp": 26.09
+    },
+    "10": {
+      "avg_precip": 10.46,
+      "avg_temp": 25.84
+    },
+    "11": {
+      "avg_precip": 10.4,
+      "avg_temp": 25.43
+    },
+    "12": {
+      "avg_precip": 6.87,
+      "avg_temp": 25.19
+    }
+  }
+}

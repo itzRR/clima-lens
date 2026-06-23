@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+xgboost
+pandas
+supabase
+python-dotenv
+numpy
+requests
