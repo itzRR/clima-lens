@@ -66,7 +66,7 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
   return (
     <Modal visible transparent animationType="slide" onRequestClose={onClose}>
       <TouchableOpacity style={styles.modalOverlay} activeOpacity={1} onPress={onClose}>
-        <Animated.View entering={SlideInUp.duration(400)} style={[styles.bottomSheet, { paddingBottom: Math.max(insets.bottom + 20, 40) }]}>
+        <Animated.View entering={SlideInDown.duration(300).springify()} style={[styles.sheetContainer, { paddingBottom: Math.max(insets.bottom + 20, 40) }]}>
           <TouchableOpacity activeOpacity={1}>
             <View style={styles.sheetHandle} />
             <View style={styles.sheetHeader}>

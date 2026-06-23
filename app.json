@@ -7,6 +7,11 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
     "scheme": "climalens",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#090B0A"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.climalens.app",

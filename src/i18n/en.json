@@ -183,5 +183,16 @@
     "culture": "Culture",
     "beaches": "Beaches",
     "food": "Food"
+  },
+  "myTrip": {
+    "yourTrips": "Your Trips",
+    "createNewTrip": "Create New Trip",
+    "addStop": "Add Stop",
+    "analyzeTrip": "Analyze Trip...",
+    "tripSafetyReport": "Trip Safety Report",
+    "overallRisk": "Overall Risk",
+    "totalDrive": "Total Drive",
+    "stops": "Stops",
+    "perStopBreakdown": "Per-Stop Breakdown"
   }
 }

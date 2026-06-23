@@ -183,5 +183,16 @@
     "culture": "සංස්කෘතිය",
     "beaches": "වෙරළ",
     "food": "ආහාර"
+  },
+  "myTrip": {
+    "yourTrips": "ඔබේ සංචාර",
+    "createNewTrip": "නව සංචාරයක් සාදන්න",
+    "addStop": "ස්ථානයක් එක් කරන්න",
+    "analyzeTrip": "සංචාරය විශ්ලේෂණය කරන්න",
+    "tripSafetyReport": "සංචාරක ආරක්ෂණ වාර්තාව",
+    "overallRisk": "සමස්ත අවදානම",
+    "totalDrive": "මුළු ගමන",
+    "stops": "නැවතුම්",
+    "perStopBreakdown": "නැවතුම් අනුව විස්තරය"
   }
 }

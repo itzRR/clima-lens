@@ -516,7 +516,7 @@ export default function MyTripScreen() {
                     <>
                       <Ionicons name="analytics" size={22} color={colors.background} />
                       <Text style={styles.analyzeText}>
-                        Analyze for {TIME_PERIODS.find(p => p.key === selectedPeriod)?.label}
+                        {t('myTrip.analyzeTrip', 'Analyze Trip...')}
                       </Text>
                       <Ionicons name="arrow-forward" size={18} color={colors.background} />
                     </>
@@ -534,7 +534,7 @@ export default function MyTripScreen() {
                 >
                   <Text style={styles.analysisTitle}>
                     <Ionicons name="shield-checkmark" size={20} color={colors.accent} />
-                    {'  '}Trip Safety Report
+                    {'  '}{t('myTrip.tripSafetyReport', 'Trip Safety Report')}
                   </Text>
                   <View style={styles.reportDateBadge}>
                     <Ionicons name="calendar" size={14} color={colors.accent} />
@@ -550,7 +550,7 @@ export default function MyTripScreen() {
                       <Text style={[styles.summaryValue, { color: riskColor(analysisResult.avgRisk) }]}>
                         {analysisResult.avgRisk}
                       </Text>
-                      <Text style={styles.summaryLabel}>Overall Risk</Text>
+                      <Text style={styles.summaryLabel}>{t('myTrip.overallRisk', 'Overall Risk')}</Text>
                     </View>
                     <View style={styles.summaryDivider} />
                     <View style={styles.summaryItem}>
@@ -558,7 +558,7 @@ export default function MyTripScreen() {
                       <Text style={styles.summaryValue}>
                         {formatMinutes(analysisResult.totalTravel)}
                       </Text>
-                      <Text style={styles.summaryLabel}>Total Drive</Text>
+                      <Text style={styles.summaryLabel}>{t('myTrip.totalDrive', 'Total Drive')}</Text>
                     </View>
                     <View style={styles.summaryDivider} />
                     <View style={styles.summaryItem}>
@@ -566,12 +566,12 @@ export default function MyTripScreen() {
                       <Text style={styles.summaryValue}>
                         {analysisResult.stopResults.length}
                       </Text>
-                      <Text style={styles.summaryLabel}>Stops</Text>
+                      <Text style={styles.summaryLabel}>{t('myTrip.stops', 'Stops')}</Text>
                     </View>
                   </View>
 
                   {/* Per-Stop Results */}
-                  <Text style={styles.perStopTitle}>Per-Stop Breakdown</Text>
+                  <Text style={styles.perStopTitle}>{t('myTrip.perStopBreakdown', 'Per-Stop Breakdown')}</Text>
                   {analysisResult.stopResults.map((sr, i) => (
                     <View key={i} style={styles.perStopRow}>
                       <View style={styles.perStopLeft}>
