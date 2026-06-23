@@ -1,11 +1,8 @@
 name: 🌍 ClimaLens Risk Data Sync
 
 on:
-  # Auto-run every 1 hour
   schedule:
     - cron: '0 * * * *'
-  
-  # Manual trigger button in GitHub Actions UI
   workflow_dispatch:
 
 jobs:
@@ -20,12 +17,12 @@ jobs:
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-          cache: 'pip'
-          cache-dependency-path: ai_backend/requirements.txt
+          python-version: '3.11'
 
       - name: 📦 Install dependencies
-        run: pip install -r ai_backend/requirements.txt
+        run: |
+          pip install --upgrade pip
+          pip install scikit-learn xgboost numpy pandas requests supabase python-dotenv
 
       - name: 🌦️ Run Live Data Sync (Weather + AI Risk)
         env:
