@@ -67,9 +67,10 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
     <Modal visible transparent animationType="slide" onRequestClose={onClose}>
       <TouchableOpacity style={styles.modalOverlay} activeOpacity={1} onPress={onClose}>
         <Animated.View style={[styles.bottomSheet, { paddingBottom: Math.max(insets.bottom + 60, 80) }]}>
-          <TouchableOpacity activeOpacity={1} style={{ flexShrink: 1 }}>
-            <View style={styles.sheetHandle} />
-            <View style={styles.sheetHeader}>
+          <View style={styles.sheetHandle} />
+          <ScrollView showsVerticalScrollIndicator={false} bounces={false}>
+            <TouchableOpacity activeOpacity={1} style={{ flexShrink: 1 }}>
+              <View style={styles.sheetHeader}>
               <View>
                 <Text style={styles.sheetName}>{district.name}</Text>
                 <Text style={styles.sheetProvince}>{district.province} Province</Text>
@@ -88,7 +89,7 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
             </View>
 
             {distDestinations.length > 0 && (
-              <ScrollView style={styles.sheetDests} showsVerticalScrollIndicator={false}>
+              <View style={styles.sheetDests}>
                 <Text style={styles.sheetSectionTitle}>{t('map.topDestinations')} - Live AI Data</Text>
                 {distDestinations.slice(0, 5).map((d, idx) => (
                   <TouchableOpacity 
@@ -111,7 +112,7 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
                     </View>
                   </TouchableOpacity>
                 ))}
-              </ScrollView>
+              </View>
             )}
 
             <View style={{flexDirection: 'row', gap: Spacing.md, marginTop: Spacing.md}}>
@@ -136,7 +137,8 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
             <TouchableOpacity style={[styles.closeBtn, {backgroundColor: 'transparent', marginTop: Spacing.sm}]} onPress={onClose}>
               <Text style={[styles.closeBtnText, {color: colors.textSecondary}]}>Close</Text>
             </TouchableOpacity>
-          </TouchableOpacity>
+            </TouchableOpacity>
+          </ScrollView>
         </Animated.View>
       </TouchableOpacity>
     </Modal>
