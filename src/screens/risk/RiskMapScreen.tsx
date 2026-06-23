@@ -162,11 +162,14 @@ function DistrictBottomSheet({ district, allDests, onClose, insets }: {
           </ScrollView>
           {showScrollHint && (
             <Animated.View style={[{
-              position: 'absolute', bottom: 12, alignSelf: 'center',
-              alignItems: 'center', opacity: 0.7,
+              position: 'absolute', bottom: 80, alignSelf: 'center',
+              alignItems: 'center', opacity: 0.85,
+              backgroundColor: colors.card + 'DD',
+              paddingHorizontal: 14, paddingVertical: 6,
+              borderRadius: 20,
             }, bounceStyle]}>
-              <Ionicons name="chevron-down" size={20} color={colors.textSecondary} />
-              <Text style={{ ...Typography.caption, color: colors.textSecondary, fontSize: 10 }}>Scroll for more</Text>
+              <Ionicons name="chevron-down" size={16} color={colors.accent} />
+              <Text style={{ ...Typography.caption, color: colors.accent, fontSize: 10, fontWeight: '600' }}>Scroll for more</Text>
             </Animated.View>
           )}
         </Pressable>
@@ -475,6 +478,7 @@ const createStyles = (colors: any) => StyleSheet.create({
   mapContainer: {
     flex: 1, alignItems: 'center', justifyContent: 'center',
     paddingHorizontal: Spacing.base,
+    paddingBottom: 60,
   },
   svgMap: { width: '100%', height: '100%', maxHeight: SCREEN_HEIGHT * 0.55 },
   districtListContainer: {

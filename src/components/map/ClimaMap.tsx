@@ -80,8 +80,8 @@ function generateLeafletHTML(destinations: any[]): string {
   <div id="map"></div>
   <script>
     var map = L.map('map', {
-      center: [7.8731, 80.7718],
-      zoom: 7,
+      center: [7.95, 80.7718],
+      zoom: 7.4,
       minZoom: 7,
       maxBounds: [[5.5, 79.0], [10.2, 82.5]],
       zoomControl: false,
