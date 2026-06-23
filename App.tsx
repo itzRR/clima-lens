@@ -3,12 +3,16 @@ import React from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StyleSheet } from 'react-native';
+import * as ExpoSplashScreen from 'expo-splash-screen';
 
 import { ThemeProvider } from './src/theme/ThemeContext';
 import { AppNavigator } from './src/navigation/AppNavigator';
 import './src/i18n';
 import { useSettingsStore } from './src/store/settingsStore';
 import { useTranslation } from 'react-i18next';
+
+// Keep the native splash screen visible until we explicitly hide it
+ExpoSplashScreen.preventAutoHideAsync().catch(() => {});
 
 function LanguageSync() {
   const language = useSettingsStore(s => s.language);

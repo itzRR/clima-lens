@@ -14,6 +14,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Colors, Typography, Spacing } from '../../theme';
 import { Ionicons } from '@expo/vector-icons';
 import { Platform } from 'react-native';
+import * as ExpoSplashScreen from 'expo-splash-screen';
 
 const { width, height } = Dimensions.get('window');
 
@@ -23,6 +24,9 @@ export default function SplashScreen() {
   const shimmer = useSharedValue(-width);
 
   useEffect(() => {
+    // Hide the native splash screen now that our custom one is rendering
+    ExpoSplashScreen.hideAsync().catch(() => {});
+
     // Pulse animation for the rings and glow
     pulse.value = withRepeat(
       withSequence(

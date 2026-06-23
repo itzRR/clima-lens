@@ -46,7 +46,16 @@
     "plugins": [
       "expo-font",
       "expo-location",
-      "expo-image-picker"
+      "expo-image-picker",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#090B0A"
+        }
+      ]
     ],
     "extra": {
       "eas": {
