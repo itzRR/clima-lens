@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Text, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
 import Animated, { 
   FadeIn, 
   SlideInDown, 
@@ -85,9 +85,13 @@ export default function SplashScreen() {
           entering={Platform.OS === 'web' ? undefined : FadeIn.duration(1200).delay(200)} 
           style={styles.iconContainer}
         >
-          {/* Sri Lankan Nature Motif with rotation */}
+          {/* ClimaLens Logo Motif with rotation */}
           <Animated.View style={leafStyle}>
-            <Ionicons name="leaf" size={64} color={Colors.accent} />
+            <Image 
+              source={require('../../../assets/icon.png')} 
+              style={{ width: 80, height: 80, borderRadius: 20 }} 
+              resizeMode="contain" 
+            />
           </Animated.View>
           {/* Inner pulse ring */}
           <Animated.View style={[styles.pulseRing, pulseStyle]} />
