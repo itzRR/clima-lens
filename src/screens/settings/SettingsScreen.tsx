@@ -538,6 +538,37 @@ export default function SettingsScreen() {
           </View>
         </View>
       </Modal>
+
+      {/* Logout Confirmation Modal */}
+      <Modal visible={showLogoutModal} transparent animationType="fade">
+        <View style={styles.modalOverlay}>
+          <View style={[styles.modalCard, { backgroundColor: colors.card, borderWidth: 1, borderColor: isDark ? '#333' : '#E5E7EB' }]}>
+            <View style={{ width: 48, height: 48, borderRadius: 24, backgroundColor: Colors.danger + '15', justifyContent: 'center', alignItems: 'center', marginBottom: 16 }}>
+              <Ionicons name="log-out-outline" size={24} color={Colors.danger} />
+            </View>
+            <Text style={[styles.modalTitle, { color: colors.textPrimary, marginBottom: 8 }]}>Log Out</Text>
+            <Text style={[styles.modalDesc, { color: colors.textSecondary, marginBottom: 24 }]}>
+              Are you sure you want to log out of your account? You will need to log back in to access your risk intelligence dashboard.
+            </Text>
+            
+            <View style={styles.modalActions}>
+              <TouchableOpacity style={styles.modalCancel} onPress={() => setShowLogoutModal(false)}>
+                <Text style={[styles.modalCancelText, { color: colors.textSecondary }]}>Cancel</Text>
+              </TouchableOpacity>
+              
+              <TouchableOpacity 
+                style={[styles.modalSubmit, { backgroundColor: Colors.danger }]} 
+                onPress={async () => {
+                  setShowLogoutModal(false);
+                  await signOut();
+                }}
+              >
+                <Text style={styles.modalSubmitText}>Yes, Log Out</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
