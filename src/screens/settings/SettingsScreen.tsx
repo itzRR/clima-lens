@@ -370,18 +370,17 @@ export default function SettingsScreen() {
             
             {/* App Identity */}
             <View style={styles.aboutHeader}>
-              <LinearGradient
-                colors={['#0F3D2E', '#1B5E20']}
-                style={styles.appIconContainer}
-              >
-                <Ionicons name="globe-outline" size={26} color={Colors.accent} />
-              </LinearGradient>
+              <Image 
+                source={require('../../../assets/icon.png')} 
+                style={{ width: 44, height: 44, borderRadius: 10, marginRight: 12 }} 
+                resizeMode="cover" 
+              />
               <View style={{ flex: 1 }}>
                 <Text style={[styles.appName, { color: colors.textPrimary }]}>ClimaLens</Text>
                 <Text style={[styles.appTagline, { color: colors.textSecondary }]}>Climate Risk & Travel Intelligence</Text>
               </View>
               <View style={[styles.versionBadge, { borderColor: colors.accent + '30', backgroundColor: colors.accent + '12' }]}>
-                <Text style={[styles.versionText, { color: colors.accent }]}>v1.5</Text>
+                <Text style={[styles.versionText, { color: colors.accent }]}>v1.6</Text>
               </View>
             </View>
             
