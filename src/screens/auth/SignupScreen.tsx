@@ -6,6 +6,7 @@ import { supabase } from '../../services/supabaseClient';
 import { GlassCard } from '../../components/common/GlassCard';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
+import { AdminBotService } from '../../services/AdminBotService';
 
 export default function SignupScreen() {
   const [name, setName] = useState('');
@@ -42,6 +43,9 @@ export default function SignupScreen() {
     if (error) {
       Alert.alert('Sign Up Failed', error.message);
     } else {
+      // Alert Admin Telegram Bot
+      AdminBotService.sendSignupAlert(email, name).catch(() => {});
+      
       if (data.session) {
         // Will auto redirect via AppNavigator
       } else {

@@ -192,7 +192,6 @@ export default function RiskMapScreen() {
   const [searchQuery, setSearchQuery] = useState('');
   const [showSearchResults, setShowSearchResults] = useState(false);
   const [riskFilter, setRiskFilter] = useState<'All' | 'Low' | 'Moderate' | 'High'>('All');
-  const [showLangSheet, setShowLangSheet] = useState(false);
 
   const filteredDestinations = destinationsData.filter(d => {
     // First apply risk filter
@@ -262,9 +261,6 @@ export default function RiskMapScreen() {
           <Text style={styles.title}>{t('map.title')}</Text>
           <Text style={styles.subtitle}>{loading ? "Syncing live AI Data..." : t('map.subtitle')}</Text>
         </View>
-        <TouchableOpacity onPress={() => setShowLangSheet(true)} style={{ padding: Spacing.sm }}>
-          <Ionicons name="language" size={24} color={Colors.textPrimary} />
-        </TouchableOpacity>
       </View>
 
       {/* Search Bar */}
@@ -368,11 +364,6 @@ export default function RiskMapScreen() {
           })}
         </ScrollView>
       </View>
-
-      <LanguageSelectorSheet 
-        visible={showLangSheet} 
-        onClose={() => setShowLangSheet(false)} 
-      />
 
       {/* Bottom Sheet */}
       {showSheet && selectedDistrictData && (

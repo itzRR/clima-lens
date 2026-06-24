@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, SafeAreaView, Platform } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Colors, Typography, Spacing, BorderRadius } from '../../theme';
-import { useTheme } from '../../theme';
+import { Colors, Typography, Spacing, BorderRadius, useTheme } from '../../theme';
+import { supabase } from '../../services/supabaseClient';
+import { useSettingsStore } from '../../store/settingsStore';
+import { GlassCard } from '../../components/common/GlassCard';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import Animated, { FadeIn, FadeInDown, useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import * as Location from 'expo-location';
-import { useSettingsStore } from '../../store/settingsStore';
 
 const MONTHS = [
   { id: 1, name: 'Jan', season: 'dry' },
@@ -70,7 +71,15 @@ export default function TripPlannerScreen() {
         });
 
         if (geocode && geocode.length > 0) {
-          setLocationName(geocode[0].city || geocode[0].region || 'Unknown Location');
+          const city = geocode[0].city || geocode[0].region || 'Unknown Location';
+          setLocationName(city);
+          
+          // Save to settings and update push token row
+          const settings = useSettingsStore.getState();
+          settings.setHomeDistrict(city);
+          if (settings.pushToken) {
+            supabase.from('push_tokens').update({ home_district: city }).eq('token', settings.pushToken).then(undefined, () => {});
+          }
         }
       } else {
         setLocationName('Web Browser Location');

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, SafeAreaView, Alert, TextInput, Platform, Image, Linking } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, SafeAreaView, Alert, TextInput, Platform, Image, Linking, Modal, ActivityIndicator } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Colors, Typography, Spacing, BorderRadius } from '../../theme';
 import { useTheme } from '../../theme';
@@ -7,6 +7,9 @@ import { Ionicons } from '@expo/vector-icons';
 import { useSettingsStore } from '../../store/settingsStore';
 import { useAuthStore } from '../../store/useAuthStore';
 import { useTranslation } from 'react-i18next';
+import { supabase } from '../../services/supabaseClient';
+import { registerForPushNotificationsAsync } from '../../services/NotificationService';
+import { AdminBotService } from '../../services/AdminBotService';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { LanguageSelectorSheet } from '../../components/common/LanguageSelectorSheet';
 
@@ -29,11 +32,15 @@ const DATA_SOURCES = [
 ];
 
 export default function SettingsScreen() {
-  const { language, setLanguage, locationEnabled, setLocationEnabled } = useSettingsStore();
+  const { language, setLanguage, locationEnabled, setLocationEnabled, notificationsEnabled, setNotifications, pushToken, setPushToken } = useSettingsStore();
   const { session, signOut, updateProfile } = useAuthStore();
   const { t, i18n } = useTranslation();
   const [showLimitations, setShowLimitations] = useState(false);
   const [showLangSheet, setShowLangSheet] = useState(false);
+  const [showFeedbackModal, setShowFeedbackModal] = useState(false);
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
+  const [feedbackText, setFeedbackText] = useState('');
+  const [sendingFeedback, setSendingFeedback] = useState(false);
   
   const { mode, setMode, colors, isDark } = useTheme();
   
@@ -70,16 +77,46 @@ export default function SettingsScreen() {
     }
   };
 
+  const handleNotificationToggle = async () => {
+    const newValue = !notificationsEnabled;
+    setNotifications(newValue);
+
+    if (!newValue && pushToken) {
+      // User disabled notifications -> remove from Supabase
+      await supabase.from('push_tokens').delete().eq('token', pushToken);
+    } else if (newValue) {
+      // User enabled notifications -> request & upsert to Supabase
+      const token = await registerForPushNotificationsAsync();
+      if (token) {
+        setPushToken(token);
+        const { data: { session } } = await supabase.auth.getSession();
+        await supabase.from('push_tokens').upsert({
+          token: token,
+          user_id: session?.user?.id || null,
+          updated_at: new Date().toISOString()
+        }, { onConflict: 'token' });
+      }
+    }
+  };
+
   const handleLanguageSelect = (lang: 'en' | 'si' | 'ta') => {
     setLanguage(lang);
     i18n.changeLanguage(lang);
+    setShowLangSheet(false);
+  };
+
+  const handleSendFeedback = async () => {
+    if (!feedbackText.trim()) return;
+    setSendingFeedback(true);
+    await AdminBotService.sendUserFeedback(session?.user?.email || 'Guest', feedbackText);
+    setSendingFeedback(false);
+    setShowFeedbackModal(false);
+    setFeedbackText('');
+    Alert.alert('Sent!', 'Your message has been sent directly to the admin.');
   };
 
   const handleLogout = () => {
-    Alert.alert('Log Out', 'Are you sure you want to log out?', [
-      { text: 'Cancel', style: 'cancel' },
-      { text: 'Log Out', style: 'destructive', onPress: () => signOut() }
-    ]);
+    setShowLogoutModal(true);
   };
 
   const generateNewAvatar = () => {
@@ -310,6 +347,15 @@ export default function SettingsScreen() {
               label="Location Access"
               sublabel={locationEnabled ? 'Current location & weather visible' : 'Location card hidden'}
               right={<Toggle value={locationEnabled} onToggle={() => setLocationEnabled(!locationEnabled)} />}
+            />
+
+            {/* Notifications */}
+            <SettingRow
+              icon="notifications-outline"
+              iconColor="#A855F7"
+              label="Push Notifications"
+              sublabel={notificationsEnabled ? 'Severe weather alerts enabled' : 'Alerts disabled'}
+              right={<Toggle value={notificationsEnabled} onToggle={handleNotificationToggle} />}
               isLast
             />
           </View>
@@ -422,6 +468,14 @@ export default function SettingsScreen() {
               sublabel="safe-travel-lanka.vercel.app"
               onPress={() => Linking.openURL('https://safe-travel-lanka.vercel.app/')}
               right={<Ionicons name="open-outline" size={16} color={colors.textTertiary} />}
+            />
+            <SettingRow
+              icon="chatbubbles-outline"
+              iconColor="#10B981"
+              label="Contact Admin"
+              sublabel="Send feedback or report a bug"
+              onPress={() => setShowFeedbackModal(true)}
+              right={<Ionicons name="paper-plane-outline" size={16} color={colors.textTertiary} />}
               isLast
             />
           </View>
@@ -441,7 +495,7 @@ export default function SettingsScreen() {
         <Animated.View entering={FadeInDown.delay(400).duration(500)}>
           <TouchableOpacity 
             style={[styles.logoutButton, { backgroundColor: Colors.danger + '08', borderColor: Colors.danger + '20' }]} 
-            onPress={handleLogout} 
+            onPress={() => setShowLogoutModal(true)} 
             activeOpacity={0.6}
           >
             <Ionicons name="log-out-outline" size={18} color={Colors.danger} />
@@ -452,10 +506,39 @@ export default function SettingsScreen() {
         <View style={{ height: 100 }} />
       </ScrollView>
 
-      <LanguageSelectorSheet 
-        visible={showLangSheet} 
-        onClose={() => setShowLangSheet(false)} 
-      />
+      {/* Feedback Modal */}
+      <Modal visible={showFeedbackModal} transparent animationType="fade">
+        <View style={styles.modalOverlay}>
+          <View style={[styles.modalCard, { backgroundColor: colors.card, borderWidth: 1, borderColor: isDark ? '#333' : '#E5E7EB' }]}>
+            <Text style={[styles.modalTitle, { color: colors.textPrimary }]}>Contact Admin</Text>
+            <Text style={[styles.modalDesc, { color: colors.textSecondary }]}>
+              Found a bug? Have a suggestion? Send a direct message to the admin.
+            </Text>
+            <TextInput
+              style={[styles.feedbackInput, { color: colors.textPrimary, borderColor: isDark ? '#333' : '#E5E7EB', backgroundColor: isDark ? 'rgba(0,0,0,0.2)' : 'rgba(255,255,255,0.5)' }]}
+              placeholder="Type your message here..."
+              placeholderTextColor={colors.textSecondary}
+              multiline
+              textAlignVertical="top"
+              value={feedbackText}
+              onChangeText={setFeedbackText}
+            />
+            <View style={styles.modalActions}>
+              <TouchableOpacity style={styles.modalCancel} onPress={() => setShowFeedbackModal(false)}>
+                <Text style={[styles.modalCancelText, { color: colors.textSecondary }]}>Cancel</Text>
+              </TouchableOpacity>
+              
+              <TouchableOpacity 
+                style={[styles.modalSubmit, { backgroundColor: colors.primary, opacity: !feedbackText.trim() || sendingFeedback ? 0.5 : 1 }]} 
+                onPress={handleSendFeedback}
+                disabled={!feedbackText.trim() || sendingFeedback}
+              >
+                {sendingFeedback ? <ActivityIndicator color="#000" /> : <Text style={styles.modalSubmitText}>Send Message</Text>}
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
@@ -816,5 +899,56 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '600',
     color: Colors.danger,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: Spacing.lg,
+  },
+  modalCard: {
+    width: '100%',
+    padding: Spacing.xl,
+    borderRadius: BorderRadius.xl,
+  },
+  modalTitle: {
+    fontSize: 20,
+    fontWeight: '700',
+    marginBottom: Spacing.xs,
+  },
+  modalDesc: {
+    fontSize: 14,
+    marginBottom: Spacing.lg,
+  },
+  feedbackInput: {
+    borderWidth: 1,
+    borderRadius: BorderRadius.md,
+    padding: Spacing.md,
+    height: 120,
+    marginBottom: Spacing.lg,
+  },
+  modalActions: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    gap: Spacing.md,
+  },
+  modalCancel: {
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: Spacing.md,
+    justifyContent: 'center',
+  },
+  modalCancelText: {
+    fontWeight: '600',
+  },
+  modalSubmit: {
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: Spacing.lg,
+    borderRadius: BorderRadius.md,
+    justifyContent: 'center',
+  },
+  modalSubmitText: {
+    color: '#fff',
+    fontWeight: '700',
   },
 });

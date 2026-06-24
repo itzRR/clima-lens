@@ -46,7 +46,7 @@ export default function DistrictDetailScreen() {
   };
 
   return (
-    <ScrollView style={styles.container} bounces={false}>
+    <ScrollView style={styles.container} contentContainerStyle={{ paddingBottom: 100 }} bounces={false}>
       <View style={[styles.header, { paddingTop: insets.top + Spacing.md }]}>
         <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
           <Ionicons name="arrow-back" size={24} color={colors.textPrimary} />

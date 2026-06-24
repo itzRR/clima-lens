@@ -21,6 +21,10 @@ import Animated, { FadeInDown, FadeIn, SlideInRight, Layout } from 'react-native
 import { useTranslation } from 'react-i18next';
 
 import { Colors, Typography, Spacing, BorderRadius, useTheme } from '../../theme';
+import { supabase } from '../../services/supabaseClient';
+import { useAuthStore } from '../../store/useAuthStore';
+import { useSettingsStore } from '../../store/settingsStore';
+import { AdminBotService } from '../../services/AdminBotService';
 import { useItineraryStore, estimateTravelMinutes } from '../../store/useItineraryStore';
 import { useDestinationsStore } from '../../store/useDestinationsStore';
 import { getTripWeatherForecast } from '../../services/weatherApi';
@@ -234,6 +238,16 @@ export default function MyTripScreen() {
       });
 
       await updateTripAnalysis(totalRiskScore, totalTravelMinutes);
+      
+      // Ping Admin Bot about the newly planned trip
+      const sessionEmail = useAuthStore.getState().session?.user?.email;
+      AdminBotService.sendTripPlannedAlert(
+        sessionEmail || 'Guest',
+        enrichedStops.map(s => s.destination?.name || 'Custom').join(' ➔ '),
+        period.days,
+        avgRisk
+      ).catch(() => {});
+      
     } catch (err) {
       console.error('Analysis error:', err);
       Alert.alert('Error', 'Failed to analyze the trip. Please try again.');

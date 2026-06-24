@@ -14,6 +14,8 @@ interface SettingsState {
   userEmail: string;
   isOnboarded: boolean;
   savedDestinations: string[];
+  pushToken: string | null;
+  homeDistrict: string | null;
   setLanguage: (lang: 'en' | 'si' | 'ta') => void;
   setTheme: (theme: ThemeMode) => void;
   setNotifications: (enabled: boolean) => void;
@@ -22,6 +24,8 @@ interface SettingsState {
   setUser: (name: string, email: string) => void;
   setOnboarded: (onboarded: boolean) => void;
   toggleSaveDestination: (slug: string) => void;
+  setPushToken: (token: string | null) => void;
+  setHomeDistrict: (district: string | null) => void;
 }
 
 export const useSettingsStore = create<SettingsState>()(
@@ -36,6 +40,8 @@ export const useSettingsStore = create<SettingsState>()(
       userEmail: '',
       isOnboarded: false,
       savedDestinations: [],
+      pushToken: null,
+      homeDistrict: 'Colombo',
       setLanguage: (language) => set({ language }),
       setTheme: (theme) => set({ theme }),
       setNotifications: (notificationsEnabled) => set({ notificationsEnabled }),
@@ -49,6 +55,8 @@ export const useSettingsStore = create<SettingsState>()(
             ? state.savedDestinations.filter((s) => s !== slug)
             : [...state.savedDestinations, slug],
         })),
+      setPushToken: (pushToken) => set({ pushToken }),
+      setHomeDistrict: (homeDistrict) => set({ homeDistrict }),
     }),
     {
       name: 'clima-lens-settings',

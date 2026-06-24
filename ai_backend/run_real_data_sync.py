@@ -20,6 +20,18 @@ if not sb_url or not sb_key:
 sb_service_key = os.environ.get('SUPABASE_SERVICE_KEY', sb_key)
 supabase: Client = create_client(sb_url, sb_service_key)
 
+TELEGRAM_TOKEN = os.environ.get("EXPO_PUBLIC_TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("EXPO_PUBLIC_TELEGRAM_CHAT_ID")
+
+def send_telegram_alert(message: str):
+    """Send an alert to the Admin Telegram Bot if the ML script fails."""
+    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID: return
+    try:
+        url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+        requests.post(url, json={"chat_id": TELEGRAM_CHAT_ID, "text": f"⚠️ <b>Backend ML Script Failed!</b>\n\n<pre>{message}</pre>", "parse_mode": "HTML"})
+    except Exception as e:
+        print(f"Failed to send Telegram alert: {e}")
+
 # Load XGBoost Models
 clf = xgb.XGBClassifier()
 reg = xgb.XGBRegressor()
@@ -42,6 +54,20 @@ try:
         baselines = json.load(f)
 except Exception:
     pass
+
+def send_push_notification(title, body):
+    """Broadcasts a severe weather alert to all users in Supabase"""
+    try:
+        response = supabase.table("push_tokens").select("token").execute()
+        tokens = [row["token"] for row in response.data]
+        if not tokens: return
+        
+        url = "https://exp.host/--/api/v2/push/send"
+        messages = [{"to": t, "sound": "default", "title": title, "body": body} for t in tokens]
+        requests.post(url, headers={"Content-Type": "application/json"}, json=messages)
+        print(f"  --> Sent PUSH ALERT to {len(tokens)} users!", flush=True)
+    except Exception as e:
+        print(f"  --> Push Error: {e}", flush=True)
 
 
 def fetch_batch_weather(destinations_batch):
@@ -231,6 +257,13 @@ def sync_live_data():
                     "weather": weather_text
                 })
 
+                # Broadcast severe weather alert if high risk
+                if risk_tier == 'risk.high' and int(safety_score) < 30:
+                    send_push_notification(
+                        title=f"🚨 Severe Weather Alert: {dest.get('name')}",
+                        body=f"Critical risk detected! Heavy rain and dangerous conditions expected."
+                    )
+
                 global_num = batch_start + i + 1
                 batch_logs.append(f"  [{global_num}] {dest.get('name')} | {risk_tier} | {weather['temp']}C | {weather_text} | AI: {suitability}/100")
 
@@ -262,5 +295,15 @@ def sync_live_data():
     print("="*60, flush=True)
 
 
+def main():
+    try:
+        sync_live_data()
+        send_telegram_alert("✅ <b>ML Sync Completed Successfully!</b>\nAll destinations and districts have been updated with the latest live weather and risk scores.")
+    except Exception as e:
+        error_msg = str(e)
+        print(f"FATAL ERROR: {error_msg}")
+        send_telegram_alert(error_msg)
+        exit(1)
+
 if __name__ == "__main__":
-    sync_live_data()
+    main()
