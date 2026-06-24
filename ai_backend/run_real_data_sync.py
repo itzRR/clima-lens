@@ -28,7 +28,7 @@ def send_telegram_alert(message: str):
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID: return
     try:
         url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-        requests.post(url, json={"chat_id": TELEGRAM_CHAT_ID, "text": f"⚠️ <b>Backend ML Script Failed!</b>\n\n<pre>{message}</pre>", "parse_mode": "HTML"})
+        requests.post(url, json={"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "HTML"})
     except Exception as e:
         print(f"Failed to send Telegram alert: {e}")
 
@@ -302,7 +302,7 @@ def main():
     except Exception as e:
         error_msg = str(e)
         print(f"FATAL ERROR: {error_msg}")
-        send_telegram_alert(error_msg)
+        send_telegram_alert(f"⚠️ <b>Backend ML Script Failed!</b>\n\n<pre>{error_msg}</pre>")
         exit(1)
 
 if __name__ == "__main__":
