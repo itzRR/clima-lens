@@ -2,8 +2,9 @@
 import React from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, AppState, AppStateStatus, Platform } from 'react-native';
 import * as ExpoSplashScreen from 'expo-splash-screen';
+import * as Location from 'expo-location';
 
 import { ThemeProvider } from './src/theme/ThemeContext';
 import { AppNavigator } from './src/navigation/AppNavigator';
@@ -44,6 +45,57 @@ function LanguageSync() {
   return null;
 }
 
+function LocationBackgroundSync() {
+  React.useEffect(() => {
+    let isFetching = false;
+
+    const syncLocationSilent = async () => {
+      if (isFetching || Platform.OS === 'web') return;
+      isFetching = true;
+      try {
+        const { status } = await Location.getForegroundPermissionsAsync();
+        if (status === 'granted') {
+          const loc = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Balanced });
+          const geocode = await Location.reverseGeocodeAsync({
+            latitude: loc.coords.latitude,
+            longitude: loc.coords.longitude,
+          });
+          if (geocode && geocode.length > 0) {
+            const city = geocode[0].city || geocode[0].region || 'Unknown Location';
+            const settings = useSettingsStore.getState();
+            if (settings.homeDistrict !== city) {
+              settings.setHomeDistrict(city);
+              if (settings.pushToken) {
+                supabase.from('push_tokens').update({ home_district: city }).eq('token', settings.pushToken).then(undefined, () => {});
+              }
+            }
+          }
+        }
+      } catch (e) {
+        // Silently fail if location fetch fails in background
+      } finally {
+        isFetching = false;
+      }
+    };
+
+    // Run once on mount
+    syncLocationSilent();
+
+    // Run every time app comes to foreground
+    const subscription = AppState.addEventListener('change', (nextAppState: AppStateStatus) => {
+      if (nextAppState === 'active') {
+        syncLocationSilent();
+      }
+    });
+
+    return () => {
+      subscription.remove();
+    };
+  }, []);
+
+  return null;
+}
+
 export default function App() {
   React.useEffect(() => {
     async function setupNotifications() {
@@ -71,6 +123,7 @@ export default function App() {
       <SafeAreaProvider>
         <ThemeProvider>
           <LanguageSync />
+          <LocationBackgroundSync />
           <AppNavigator />
         </ThemeProvider>
       </SafeAreaProvider>
