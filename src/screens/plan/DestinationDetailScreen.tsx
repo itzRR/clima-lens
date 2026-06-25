@@ -249,7 +249,7 @@ export default function DestinationDetailScreen() {
                 </Text>
               </View>
               <View style={styles.scorePill}>
-                <Text style={styles.scorePillText}>{destination?.suitability_score ?? 'N/A'}{destination?.suitability_score != null ? '/100' : ''}</Text>
+                <Text style={styles.scorePillText}>{destination?.suitability_score ?? monthlyScores[new Date().getMonth()]}/100</Text>
               </View>
             </View>
           </View>
