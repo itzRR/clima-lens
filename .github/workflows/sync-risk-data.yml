@@ -36,3 +36,13 @@ jobs:
           EXPO_PUBLIC_TELEGRAM_CHAT_ID: ${{ secrets.EXPO_PUBLIC_TELEGRAM_CHAT_ID }}
         working-directory: ai_backend
         run: python run_real_data_sync.py
+
+      - name: 🚨 Alert Telegram on Failure
+        if: failure()
+        env:
+          EXPO_PUBLIC_TELEGRAM_BOT_TOKEN: ${{ secrets.EXPO_PUBLIC_TELEGRAM_BOT_TOKEN }}
+          EXPO_PUBLIC_TELEGRAM_CHAT_ID: ${{ secrets.EXPO_PUBLIC_TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${EXPO_PUBLIC_TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{\"chat_id\": \"${EXPO_PUBLIC_TELEGRAM_CHAT_ID}\", \"text\": \"🚨 <b>GitHub Action FAILED!</b>\n\n<b>Workflow:</b> 🌍 Risk Data Sync\n<b>Time:</b> $(date -u '+%Y-%m-%d %H:%M UTC')\n<b>Run:</b> ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\n\nPlease check the logs immediately!\", \"parse_mode\": \"HTML\"}"
