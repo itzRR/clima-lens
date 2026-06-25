@@ -18,8 +18,62 @@ import { useItineraryStore } from '../../store/useItineraryStore';
 
 const { width } = Dimensions.get('window');
 
-// Mock Data
-const MOCK_MONTHLY_SCORES = [85, 90, 92, 70, 40, 30, 45, 55, 60, 65, 80, 85];
+// Real per-location climate baselines for computing monthly suitability
+const historicalBaselines = require('../../utils/historical_baselines.json');
+
+/**
+ * Compute monthly suitability scores for a destination using real historical climate data.
+ * Score = 100 - (precipitation penalty) - (temperature deviation penalty), clamped to [5, 98].
+ * This ensures every destination gets a unique, realistic "Best Time to Visit" chart.
+ */
+function computeMonthlyScores(locationName?: string, districtName?: string): number[] {
+  // Try to find baselines for this specific location or district
+  let baseline = historicalBaselines[locationName || ''] 
+    || historicalBaselines[districtName || '']
+    || null;
+
+  // If exact match not found, try partial match
+  if (!baseline) {
+    const searchName = (locationName || '').toLowerCase();
+    const searchDistrict = (districtName || '').toLowerCase();
+    for (const key of Object.keys(historicalBaselines)) {
+      const k = key.toLowerCase();
+      if (k !== '_fallback_' && (k.includes(searchName) || searchName.includes(k) || k.includes(searchDistrict))) {
+        baseline = historicalBaselines[key];
+        break;
+      }
+    }
+  }
+
+  // If still not found, use the fallback
+  if (!baseline) {
+    baseline = historicalBaselines['_FALLBACK_'];
+  }
+
+  if (!baseline) {
+    // Ultimate fallback: generic Sri Lanka dry/wet season pattern
+    return [78, 82, 80, 60, 35, 25, 30, 40, 45, 55, 70, 75];
+  }
+
+  const scores: number[] = [];
+  for (let month = 1; month <= 12; month++) {
+    const monthData = baseline[month.toString()];
+    if (!monthData) {
+      scores.push(50);
+      continue;
+    }
+    const precip = monthData.avg_precip || 0;
+    const temp = monthData.avg_temp || 27;
+
+    // Suitability: penalize heavy rain (biggest factor) and extreme temperatures
+    const precipPenalty = Math.min(precip * 6, 70);  // Heavy rain months get penalized hard
+    const tempPenalty = Math.abs(temp - 26) * 2.5;    // Ideal temp is ~26°C
+    const raw = 100 - precipPenalty - tempPenalty;
+    scores.push(Math.max(5, Math.min(98, Math.round(raw))));
+  }
+
+  return scores;
+}
 
 export default function DestinationDetailScreen() {
   const { colors } = useTheme();
@@ -75,11 +129,13 @@ export default function DestinationDetailScreen() {
     }
   };
 
+  const monthlyScores = computeMonthlyScores(destination?.name || name, destination?.district);
+
   const chartData = {
     labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
     datasets: [
       {
-        data: MOCK_MONTHLY_SCORES,
+        data: monthlyScores,
       },
     ],
   };
@@ -193,7 +249,7 @@ export default function DestinationDetailScreen() {
                 </Text>
               </View>
               <View style={styles.scorePill}>
-                <Text style={styles.scorePillText}>{destination?.suitability_score || 92}/100</Text>
+                <Text style={styles.scorePillText}>{destination?.suitability_score ?? 'N/A'}{destination?.suitability_score != null ? '/100' : ''}</Text>
               </View>
             </View>
           </View>

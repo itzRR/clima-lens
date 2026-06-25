@@ -6,14 +6,26 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-SUPABASE_URL = os.getenv("EXPO_PUBLIC_SUPABASE_URL")
-SUPABASE_KEY = os.getenv("EXPO_PUBLIC_SUPABASE_ANON_KEY")
+# Support both naming conventions (local .env uses EXPO_PUBLIC_*, GitHub Secrets use plain names)
+SUPABASE_URL = os.getenv("SUPABASE_URL") or os.getenv("EXPO_PUBLIC_SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY") or os.getenv("EXPO_PUBLIC_SUPABASE_ANON_KEY")
+TELEGRAM_TOKEN = os.getenv("EXPO_PUBLIC_TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("EXPO_PUBLIC_TELEGRAM_CHAT_ID")
 
 if not SUPABASE_URL or not SUPABASE_KEY:
-    print("Error: Supabase credentials not found in .env file")
+    print("Error: Supabase credentials not found in environment")
     exit(1)
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+
+def send_telegram_alert(message: str):
+    """Send a status alert to the Admin Telegram Bot."""
+    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID: return
+    try:
+        url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+        requests.post(url, json={"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "HTML"}, timeout=10)
+    except Exception as e:
+        print(f"Telegram alert failed: {e}")
 
 # Simple mapping of districts to coordinates
 DISTRICT_COORDS = {
@@ -65,7 +77,8 @@ def main():
     users = response.data
     
     if not users:
-        print("No users found.")
+        print("No users found with push tokens.")
+        send_telegram_alert("📭 <b>Daily Weather:</b> No users with push tokens found. Skipping.")
         return
 
     # Group tokens by district to minimize API calls
@@ -76,6 +89,7 @@ def main():
             districts[dist] = []
         districts[dist].append(user["token"])
         
+    total_sent = 0
     for district, tokens in districts.items():
         coords = DISTRICT_COORDS.get(district, DISTRICT_COORDS["Colombo"])
         temp, desc = get_weather(coords[0], coords[1])
@@ -91,8 +105,15 @@ def main():
         
         print(f"Sending to {len(tokens)} users in {district}...")
         send_push_notification(tokens, title, body)
+        total_sent += len(tokens)
         
-    print("✅ Daily weather notifications sent!")
+    print(f"✅ Daily weather notifications sent to {total_sent} users!")
+    send_telegram_alert(f"☀️ <b>Daily Weather Push Sent!</b>\n\nDelivered morning forecasts to <b>{total_sent}</b> users across <b>{len(districts)}</b> districts.")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"FATAL ERROR: {e}")
+        send_telegram_alert(f"⚠️ <b>Daily Weather Push Failed!</b>\n\n<pre>{e}</pre>")
+        exit(1)
