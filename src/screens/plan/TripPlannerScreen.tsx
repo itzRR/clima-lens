@@ -221,9 +221,6 @@ export default function TripPlannerScreen() {
                   <Text style={[styles.monthName, { color: colors.textSecondary }, isSelected && styles.monthNameActive]}>
                     {t(`months.${month.name.toLowerCase()}`, month.name)}
                   </Text>
-                  <Text style={[styles.seasonLabel, { color: colors.textTertiary }, isSelected && { color: 'rgba(0,0,0,0.5)' }]}>
-                    {month.season === 'dry' ? 'Dry' : month.season === 'wet' ? 'Wet' : 'Mix'}
-                  </Text>
                 </TouchableOpacity>
               );
             })}
