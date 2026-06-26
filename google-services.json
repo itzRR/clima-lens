@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "21929025379",
+    "project_id": "clima-lens",
+    "storage_bucket": "clima-lens.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21929025379:android:29f6d3d830561ff760fd56",
+        "android_client_info": {
+          "package_name": "com.climalens.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21929025379-68pem33t9i8j2fk4vfr8hh2fc40qpeal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBlB0iA2SWaYSA8ZNTwOA3XcRat05l9b4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21929025379-68pem33t9i8j2fk4vfr8hh2fc40qpeal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
