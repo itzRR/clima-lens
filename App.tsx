@@ -105,14 +105,20 @@ export default function App() {
       const token = await registerForPushNotificationsAsync();
       if (token) {
         settingsStore.setPushToken(token);
+        console.log('Push token obtained:', token.substring(0, 20) + '...');
         // Save the token to Supabase silently
         const { data: { session } } = await supabase.auth.getSession();
-        await supabase.from('push_tokens').upsert({
+        const { error } = await supabase.from('push_tokens').upsert({
           token: token,
           user_id: session?.user?.id || null,
           home_district: settingsStore.homeDistrict || 'Colombo',
           updated_at: new Date().toISOString()
         }, { onConflict: 'token' });
+        if (error) {
+          console.error('Failed to save push token to Supabase:', error.message, error.details, error.hint);
+        } else {
+          console.log('Push token saved to Supabase successfully!');
+        }
       }
     }
     setupNotifications();
