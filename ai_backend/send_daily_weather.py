@@ -160,13 +160,15 @@ def send_push_notification(tokens, title, body, subtitle=None):
             "body": body,
             "priority": "high",
             "channelId": "default",
-            "color": "#22C55E",
+            "ttl": 86400
         }
         if subtitle:
             msg["subtitle"] = subtitle
         messages.append(msg)
     try:
-        requests.post(url, headers={"Content-Type": "application/json"}, json=messages, timeout=15)
+        response = requests.post(url, headers={"Content-Type": "application/json"}, json=messages, timeout=15)
+        print(f"Expo Push API Response: {response.status_code}")
+        print(response.json())
     except Exception as e:
         print(f"Push Error: {e}")
 
