@@ -63,9 +63,9 @@ def send_push_notification(title, body):
         if not tokens: return
         
         url = "https://exp.host/--/api/v2/push/send"
-        messages = [{"to": t, "sound": "default", "title": title, "body": body} for t in tokens]
-        requests.post(url, headers={"Content-Type": "application/json"}, json=messages)
-        print(f"  --> Sent PUSH ALERT to {len(tokens)} users!", flush=True)
+        messages = [{"to": t, "sound": "default", "title": title, "body": body, "priority": "high", "channelId": "default", "ttl": 86400} for t in tokens]
+        resp = requests.post(url, headers={"Content-Type": "application/json"}, json=messages)
+        print(f"  --> Sent PUSH ALERT to {len(tokens)} users! Response: {resp.status_code}", flush=True)
     except Exception as e:
         print(f"  --> Push Error: {e}", flush=True)
 
